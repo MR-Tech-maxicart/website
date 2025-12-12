@@ -1,0 +1,34 @@
+{
+  "websiteName": "GenLoft",
+  "contact": "Contact",
+  "menu": {
+    "aboutUs": "About us",
+    "services": "Services",
+    "forWhom": "For whom",
+    "platform": "Platform",
+    "landingGenerator": "Landing generator",
+    "blog": "Blog"
+  },
+  "telegram": "Telegram",
+  "instagram": "Instagram",
+  "facebook": "Facebook",
+  "home": {
+    "hero": {
+      "innovate_automate": "You innovate, we automate.",
+      "heading": {
+        "title": "The {0} and{1}digital asset products.",
+        "titleHighlight": "infrastructure layer for modern trading",
+        "subtitle": "Secure, modular SaaS to launch and scale exchanges, wallets, and high-{0}volume digital products without rebuilding your stack."
+      },
+      "cta": {
+        "platform": "Start with the platform",
+        "explore": "Explore Infrastructure"
+      },
+      "highlights": {
+        "security": "Zero-trust security",
+        "gdpr": "GDPR-ready from day one",
+        "siteGeneration": "AI + Human site generation"
+      }
+    }
+  }
+}
