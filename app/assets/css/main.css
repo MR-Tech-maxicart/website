@@ -6,6 +6,7 @@
   --ui-primary: #0095FF;
   --ui-bg: #08090A;
   --ui-text-inverted: white;
+  --ui-text-muted: oklch(0.5138 0 0);
 
   --ui-header-height: 112px;
 

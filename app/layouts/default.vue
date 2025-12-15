@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { en } from '@nuxt/ui/locale'
+
 const header = shallowRef<HTMLElement | null>(null)
 const sentinel = useTemplateRef('sentinel')
 
@@ -15,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="en">
     <div
       ref="sentinel"
       class="mt-6"
@@ -26,7 +28,7 @@ onMounted(() => {
       }"
     >
       <template #left>
-        <AppLogo class="" />
+        <AppLogo />
       </template>
 
       <LayoutHeaderMenu />

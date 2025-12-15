@@ -29,6 +29,26 @@
         "gdpr": "GDPR-ready from day one",
         "siteGeneration": "AI + Human site generation"
       }
+    },
+    "about": {
+      "title": "About Genloft",
+      "sectionKey": "About",
+      "sectionDescription": "GENLOFT is an infrastructure - first SaaS platform for building, securing, and operating trading platforms, digital asset products, and ambitious online services.",
+      "sectionSubDescription": "We combine AI-driven generation with modular backend tools, zero-trust access, and compliance-ready workflows – so product teams in finance and digital assets can move fast without losing control.",
+      "cards": {
+        "zeroTrust": {
+          "title": "Zero-trust architecture"
+        },
+        "gdpr": {
+          "title": "GDPR compliance & audit logs"
+        },
+        "apiFirst": {
+          "title": "Modular, API-first design"
+        },
+        "cloud": {
+          "title": "Cloud or self-hosted deployments"
+        }
+      }
     }
   }
 }

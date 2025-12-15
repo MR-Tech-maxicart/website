@@ -12,7 +12,7 @@
     <template #top>
       <NuxtImg
         src="home/hero-bg.avif"
-        class="absolute top-0 left-0 min-h-dvh"
+        class="absolute top-0 left-0 min-h-dvh min-w-dvw"
       />
     </template>
 

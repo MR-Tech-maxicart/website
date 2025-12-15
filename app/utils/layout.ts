@@ -1,5 +1,8 @@
 import type {NavigationMenuItem} from "#ui/components/NavigationMenu.vue";
 import type {LocalePathFunction} from "#i18n";
+import { twMerge } from 'tailwind-merge'
+
+export const cn = twMerge;
 
 export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunction): NavigationMenuItem[] => {
   return [
