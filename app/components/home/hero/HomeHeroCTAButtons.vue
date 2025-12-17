@@ -20,7 +20,6 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
     <template #trailing>
       <UIcon
         name="maxicart:arrow-external"
-        mode="svg"
         class="fill-white size-[18px]"
       />
     </template>

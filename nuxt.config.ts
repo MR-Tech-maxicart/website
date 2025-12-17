@@ -48,9 +48,10 @@ export default defineNuxtConfig({
   },
 
   icon: {
+    mode: 'svg',
     customCollections: [{
       prefix: 'maxicart',
-      dir: './app/assets/icons'
+      dir: './app/assets/icons',
     }]
   },
 

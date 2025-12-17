@@ -40,7 +40,7 @@
           "title": "Zero-trust architecture"
         },
         "gdpr": {
-          "title": "GDPR compliance & audit logs"
+          "title": "GDPR compliance{0} & audit logs"
         },
         "apiFirst": {
           "title": "Modular, API-first design"
@@ -48,6 +48,45 @@
         "cloud": {
           "title": "Cloud or self-hosted deployments"
         }
+      }
+    },
+    "capabilities": {
+      "title": "Our Capabilities",
+      "sectionKey": "service",
+      "sectionDescription": "Activate only what you need — each capability is modular and integrates with the core platform.",
+      "badges": {
+        "service": "service"
+      },
+      "cards": {
+        "ai_generated_pages": {
+          "title": "AI-Generated Pages",
+          "description": "Smart layouts from your brief, refined by humans — ideal for landing flows, funnels, and product pages."
+        },
+        "custom_ui_ux_sites": {
+          "title": "Custom UI/UX Sites",
+          "description": "Brand-aligned marketing and app surfaces, shipped in your stack with performance and accessibility in mind."
+        },
+        "modular_page_engine": {
+          "title": "Modular Page Engine",
+          "description": "Multi-step funnels, forms, routing, and tracking — ready for high-volume traffic and rapid iteration."
+        },
+        "security_compliance": {
+          "title": "Security & Compliance",
+          "description": "Zero-trust access, audit logs, and monitoring for sensitive data and regulated financial products."
+        },
+        "crm_form_routing": {
+          "title": "CRM & Form Routing",
+          "description": "Lead capture, tagging, sources, and webhook flows for acquisition, partner programs, and ops teams."
+        },
+        "data_analytics_layer": {
+          "title": "Data & Analytics Layer",
+          "description": "Attribution, dashboards, and full visibility into performance, cohorts, and key business events."
+        }
+      },
+      "bigCard": {
+        "label": "Core Services",
+        "title": "Flexible modular platform for next-level digital infrastructure — from trading flows and customer onboarding to secure dashboards and data-heavy applications.",
+        "caption": "Design, optimize, scale, and secure"
       }
     }
   }

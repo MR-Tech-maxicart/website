@@ -16,7 +16,6 @@ const appSocials = useAppConfig().app.socials
       class="size-[15px]"
       :class="social.titleKey === 'instagram' ? '[&_path]:fill-primary' : 'group-hover/btn:[&_path]:fill-white'"
       :name="social.icon"
-      mode="svg"
     />
   </NuxtLink>
 </div>

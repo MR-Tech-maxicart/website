@@ -1,23 +1,21 @@
 <script setup lang="ts">
 import type {HomeAboutCardItemProps, HomeCardAboutItemKey} from "~/components/home/about/HomeAboutCardItem.vue";
 
-const { t } = useI18n()
-
 const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
   zeroTrust: {
-    title: t('home.about.cards.zeroTrust.title'),
+    titleKey: 'home.about.cards.zeroTrust.title',
     image: 'home/about/zero-trust.avif',
   },
   gdpr: {
-    title: t('home.about.cards.gdpr.title'),
+    titleKey: 'home.about.cards.gdpr.title',
     image: 'home/about/gdpr.avif',
   },
   apiFirst: {
-    title: t('home.about.cards.apiFirst.title'),
+    titleKey: 'home.about.cards.apiFirst.title',
     image: 'home/about/api-first.avif',
   },
   cloud: {
-    title: t('home.about.cards.cloud.title'),
+    titleKey: 'home.about.cards.cloud.title',
     image: 'home/about/cloud.avif',
   },
 };
@@ -37,7 +35,7 @@ const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
       :key="key"
       :item-key="key"
       v-bind="item"
-      class="flex-1"
+      class="flex-1 h-[500px]"
     />
   </div>
 </HomeSection>

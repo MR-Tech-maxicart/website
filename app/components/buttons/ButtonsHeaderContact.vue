@@ -27,7 +27,6 @@ watch(route, (newRoute) => contactLink.value = localePath({
       <span class="flex size-10 items-center justify-center rounded-full bg-primary group-hover/btn:bg-white">
         <UIcon
           name="maxicart:phone"
-          mode="svg"
           class="size-4 fill-white group-hover/btn:fill-primary"
         />
       </span>

@@ -18,6 +18,7 @@ onMounted(() => {
 
 <template>
   <UApp :locale="en">
+    <NuxtLoadingIndicator />
     <div
       ref="sentinel"
       class="mt-6"

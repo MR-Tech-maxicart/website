@@ -11,7 +11,7 @@ defineProps<{
 <template>
   <UPageSection
     :ui="{
-      container: 'lg:py-40',
+      container: 'lg:py-40 sm:gap-[50px]',
       title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-medium tracking-tighter leading-none text-muted text-left',
       body: 'mt-[50px] flex',
     }"

@@ -1,0 +1,5 @@
+key: custom_ui_ux_sites
+icon: arrow-down-right
+titleKey: capabilities.cards.custom_ui_ux_sites.title
+descriptionKey: capabilities.cards.custom_ui_ux_sites.description
+badgeKey: capabilities.badges.service

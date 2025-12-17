@@ -7,5 +7,7 @@
     <HomeHeroSection />
 
     <HomeAboutSection />
+
+    <HomeCapabilitiesSection />
   </div>
 </template>
