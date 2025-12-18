@@ -19,6 +19,11 @@ export default defineAppConfig({
     ],
   },
   ui: {
+    button: {
+      slots: {
+        base: 'font-light',
+      },
+    },
     header: {
       slots: {
         container: 'lg:px-[50px]'
@@ -30,13 +35,16 @@ export default defineAppConfig({
       },
     },
     navigationMenu: {
-      variants: {
-        active: {
-          true: {
-            link: '',
-          },
-        }
-      },
+      compoundVariants: [
+        {
+          variant: 'pill',
+          active: true,
+          highlight: false,
+          class: {
+            link: 'before:bg-[#ffffff]/10'
+          }
+        },
+      ],
     },
   },
 })

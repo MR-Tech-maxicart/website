@@ -7,7 +7,7 @@ const { data: cards } = await useAsyncData('capabilities', () => queryCollection
     :title="$t('home.capabilities.title')"
     section-number="002"
     :section-key="$t('home.capabilities.sectionKey')"
-    :section-description="$t('home.capabilities.sectionDescription')"
+    section-description-key="home.capabilities.sectionDescription"
   >
     <HomeCapabilitiesCards
       v-if="cards"

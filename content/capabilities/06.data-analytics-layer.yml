@@ -1,5 +1,4 @@
 key: data_analytics_layer
 icon: arrow-down-right
-titleKey: capabilities.cards.data_analytics_layer.title
-descriptionKey: capabilities.cards.data_analytics_layer.description
-badgeKey: capabilities.badges.service
+titleKey: home.capabilities.cards.data_analytics_layer.title
+descriptionKey: home.capabilities.cards.data_analytics_layer.description

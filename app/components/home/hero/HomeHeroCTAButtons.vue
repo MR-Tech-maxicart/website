@@ -8,10 +8,10 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
 </script>
 
 <template>
-<div class="flex gap-x-6">
+<div class="flex gap-x-7">
   <UButton
     :to="platformLink"
-    class="px-[15px] py-[9px] text-[22px] gap-3 relative z-10 hover:shadow-[0_0_48px_rgba(14,52,180,0.55)] hover:bg-primary group/btn"
+    class="px-[15px] py-[14px] text-[22px] gap-3 relative z-10 hover:shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light hover:bg-primary group/btn"
   >
     <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl hidden group-hover/btn:block" />
 
@@ -20,7 +20,7 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
     <template #trailing>
       <UIcon
         name="maxicart:arrow-external"
-        class="fill-white size-[18px]"
+        class="fill-white size-[18px] mr-1"
       />
     </template>
   </UButton>
@@ -28,7 +28,7 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
   <UButton
     :to="infraLink"
     variant="outline"
-    class="px-[15px] py-[9px] text-[22px] text-white relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)]"
+    class="px-[15px] py-[14px] text-[22px] text-white relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light"
   >
     <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl" />
 

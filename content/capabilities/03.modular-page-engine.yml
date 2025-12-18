@@ -1,5 +1,4 @@
 key: modular_page_engine
 icon: arrow-down-right
-titleKey: capabilities.cards.modular_page_engine.title
-descriptionKey: capabilities.cards.modular_page_engine.description
-badgeKey: capabilities.badges.service
+titleKey: home.capabilities.cards.modular_page_engine.title
+descriptionKey: home.capabilities.cards.modular_page_engine.description

@@ -10,7 +10,6 @@ export default defineContentConfig({
         icon: z.string().optional(),
         titleKey: z.string(),
         descriptionKey: z.string(),
-        badgeKey: z.string().optional()
       })
     })
   },

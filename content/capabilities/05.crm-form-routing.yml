@@ -1,5 +1,4 @@
 key: crm_form_routing
 icon: arrow-down-right
-titleKey: capabilities.cards.crm_form_routing.title
-descriptionKey: capabilities.cards.crm_form_routing.description
-badgeKey: capabilities.badges.service
+titleKey: home.capabilities.cards.crm_form_routing.title
+descriptionKey: home.capabilities.cards.crm_form_routing.description

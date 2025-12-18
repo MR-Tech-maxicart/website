@@ -16,7 +16,7 @@
     "hero": {
       "innovate_automate": "You innovate, we automate.",
       "heading": {
-        "title": "The {0} and{1}digital asset products.",
+        "title": "The {0} and digital{1}asset products.",
         "titleHighlight": "infrastructure layer for modern trading",
         "subtitle": "Secure, modular SaaS to launch and scale exchanges, wallets, and high-{0}volume digital products without rebuilding your stack."
       },
@@ -33,7 +33,7 @@
     "about": {
       "title": "About Genloft",
       "sectionKey": "About",
-      "sectionDescription": "GENLOFT is an infrastructure - first SaaS platform for building, securing, and operating trading platforms, digital asset products, and ambitious online services.",
+      "sectionDescription": "GENLOFT is an infrastructure - first SaaS{0}platform for building, securing, and operating{0}trading platforms, digital asset products, and{0}ambitious online services.",
       "sectionSubDescription": "We combine AI-driven generation with modular backend tools, zero-trust access, and compliance-ready workflows – so product teams in finance and digital assets can move fast without losing control.",
       "cards": {
         "zeroTrust": {
@@ -53,14 +53,14 @@
     "capabilities": {
       "title": "Our Capabilities",
       "sectionKey": "service",
-      "sectionDescription": "Activate only what you need — each capability is modular and integrates with the core platform.",
+      "sectionDescription": "Activate only what you need - each{0}capability is modular and integrates with{0}the core platform.",
       "badges": {
         "service": "service"
       },
       "cards": {
         "ai_generated_pages": {
           "title": "AI-Generated Pages",
-          "description": "Smart layouts from your brief, refined by humans — ideal for landing flows, funnels, and product pages."
+          "description": "Smart layouts from your brief, refined by humans - ideal for landing flows, funnels, and product pages."
         },
         "custom_ui_ux_sites": {
           "title": "Custom UI/UX Sites",
@@ -68,7 +68,7 @@
         },
         "modular_page_engine": {
           "title": "Modular Page Engine",
-          "description": "Multi-step funnels, forms, routing, and tracking — ready for high-volume traffic and rapid iteration."
+          "description": "Multi-step funnels, forms, routing, and tracking - ready for high-volume traffic and rapid iteration."
         },
         "security_compliance": {
           "title": "Security & Compliance",
@@ -85,7 +85,7 @@
       },
       "bigCard": {
         "label": "Core Services",
-        "title": "Flexible modular platform for next-level digital infrastructure — from trading flows and customer onboarding to secure dashboards and data-heavy applications.",
+        "title": "Flexible modular platform for next-level digital infrastructure - from trading flows and customer onboarding to secure dashboards and data-heavy applications.",
         "caption": "Design, optimize, scale, and secure"
       }
     }

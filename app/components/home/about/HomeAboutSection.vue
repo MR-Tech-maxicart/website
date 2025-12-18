@@ -26,8 +26,9 @@ const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
   :title="$t('home.about.title')"
   section-number="001"
   :section-key="$t('home.about.sectionKey')"
-  :section-description="$t('home.about.sectionDescription')"
+  section-description-key="home.about.sectionDescription"
   :section-sub-description="$t('home.about.sectionSubDescription')"
+  class="mt-8"
 >
   <div class="grid lg:grid-cols-[346fr_346fr_330fr_516fr] gap-x-1">
     <HomeAboutCardItem

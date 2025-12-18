@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-<div class="border-l-3 flex flex-col pl-3.5 tracking-[-0.07em] leading-[1.0214] h-max">
+<div class="border-l-3 flex flex-col pl-3.5 tracking-[-.09em] leading-[1.0214] h-max">
   <span class="font-medium text-[28px]">
     {{ index }}
   </span>

@@ -1,5 +1,4 @@
 key: security_compliance
 icon: arrow-down-right
-titleKey: capabilities.cards.security_compliance.title
-descriptionKey: capabilities.cards.security_compliance.description
-badgeKey: capabilities.badges.service
+titleKey: home.capabilities.cards.security_compliance.title
+descriptionKey: home.capabilities.cards.security_compliance.description

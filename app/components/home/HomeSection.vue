@@ -3,7 +3,7 @@ defineProps<{
   title: string
   sectionNumber: string
   sectionKey: string
-  sectionDescription: string
+  sectionDescriptionKey: string
   sectionSubDescription?: string
 }>()
 </script>
@@ -11,8 +11,8 @@ defineProps<{
 <template>
   <UPageSection
     :ui="{
-      container: 'lg:py-40 sm:gap-[50px]',
-      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-medium tracking-tighter leading-none text-muted text-left',
+      container: 'lg:py-32 sm:gap-[50px]',
+      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-tighter leading-none text-muted text-left',
       body: 'mt-[50px] flex',
     }"
     :title="title"
@@ -24,16 +24,24 @@ defineProps<{
         :section-key="sectionKey"
       />
 
-      <div class="max-w-[calc(100%-36.6667%)] text-[#f8f8f8] text-[48px] leading-[120%] font-semibold text-balance">
-        {{ sectionDescription }}
-      </div>
+      <I18nT
+        :keypath="sectionDescriptionKey"
+        scope="global"
+        tag="div"
+        class="text-[#f8f8f8] text-[48px] leading-[120%] font-medium tracking-[-.08em] text-balance"
+        :class="[
+          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[67%]',
+        ]"
+      >
+        <br />
+      </I18nT>
 
-      <div
+      <p
         v-if="sectionSubDescription?.length"
-        class="w-[20%] text-muted text-lg tracking-[-0.07em] leading-[1.3] shrink-0 text-balance"
+        class="w-[20%] text-muted text-lg tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
       >
         {{ sectionSubDescription }}
-      </div>
+      </p>
     </template>
     <slot />
   </UPageSection>

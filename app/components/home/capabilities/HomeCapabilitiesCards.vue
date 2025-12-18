@@ -5,6 +5,9 @@ defineProps<{
   cards: CapabilitiesCollectionItem[]
 }>()
 
+const activeCard = ref<number>(0)
+
+const formatIndexString = (index: number) => String(index + 1).padStart(2, '0')
 </script>
 
 <template>
@@ -14,6 +17,14 @@ defineProps<{
         v-for="(card, _key) in cards"
         :key="_key"
         :card="card"
+        :index-string="formatIndexString(_key)"
+        :index-class="_key === 0 ? 'text-[63.13px]' : 'text-[36.98px]'"
+        :is-active="activeCard === _key"
+        @update:isActive="(val: boolean) => {
+          if (val) {
+            activeCard = _key
+          }
+        }"
       />
     </div>
 

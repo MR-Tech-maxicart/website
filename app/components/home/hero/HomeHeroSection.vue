@@ -17,7 +17,7 @@
     </template>
 
     <div class="flex gap-4 justify-between">
-      <div class="border-l-3 pl-3 text-base max-w-[120px] h-max">
+      <div class="border-l-3 pl-3 text-base max-w-[120px] h-max font-medium">
         {{ $t('home.hero.innovate_automate') }}
       </div>
 

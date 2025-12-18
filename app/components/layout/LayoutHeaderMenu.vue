@@ -11,15 +11,7 @@ const menuItems = getMainMenuItems(t, localePath)
     color="neutral"
     :ui="{
       list: 'gap-x-3',
-      link: 'group/link relative text-lg',
-      // linkTrailing: 'absolute top-[40%] left-[calc(100%-var(--spacing))] opacity-0 transition-opacity duration-200 group-hover/link:opacity-100',
+      link: 'relative text-lg font-light text-[#ffffff]',
     }"
-  >
-<!--    <template #item-trailing>-->
-<!--      <UIcon-->
-<!--        name="maxicart:checkmark"-->
-<!--        class="size-3"-->
-<!--      />-->
-<!--    </template>-->
-  </UNavigationMenu>
+  />
 </template>
