@@ -11,6 +11,16 @@ export default defineContentConfig({
         titleKey: z.string(),
         descriptionKey: z.string(),
       })
-    })
+    }),
+    scaleItems: defineCollection({
+      type: 'data',
+      source: 'scales/**.yml',
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        icon: z.string(),
+        highlight: z.string(),
+      })
+    }),
   },
 })

@@ -1,15 +1,12 @@
 <script setup lang="ts">
-const localePath = useLocalePath()
 const route = useRoute()
 
-const contactLink = ref<string>()
-watch(route, (newRoute) => contactLink.value = localePath({
-  ...newRoute,
-  query: {
-    ...newRoute.query,
-    popup: 'contact'
-  }
-}), { immediate: true })
+const contactLink = ref<string>('')
+watch(
+  route,
+  newRoute => contactLink.value = getPopupLink('contact', useLocalePath(), newRoute),
+  { immediate: true }
+)
 </script>
 
 <template>

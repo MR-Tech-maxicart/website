@@ -6,19 +6,31 @@ defineProps<{
   sectionDescriptionKey: string
   sectionSubDescription?: string
 }>()
+
+defineSlots<{
+  sectionIdAndKey?: (props: { sectionNumber: string; sectionKey: string }) => VNode
+  default: VNode
+}>()
 </script>
 
 <template>
   <UPageSection
     :ui="{
-      container: 'lg:py-32 sm:gap-[50px]',
+      container: 'lg:py-32 sm:gap-24',
       title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-tighter leading-none text-muted text-left',
       body: 'mt-[50px] flex',
     }"
     :title="title"
   >
     <template #body>
+      <slot
+        v-if="$slots.sectionIdAndKey"
+        name="sectionIdAndKey"
+        :section-number="sectionNumber"
+        :section-key="sectionKey"
+      />
       <HomeSectionIdxAndKey
+        v-else
         class="w-1/6"
         :index="sectionNumber"
         :section-key="sectionKey"
@@ -30,7 +42,7 @@ defineProps<{
         tag="div"
         class="text-[#f8f8f8] text-[48px] leading-[1.2] font-medium tracking-[-.08em] text-balance"
         :class="[
-          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[67%]',
+          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[70%]',
         ]"
       >
         <br />
@@ -43,6 +55,7 @@ defineProps<{
         {{ sectionSubDescription }}
       </p>
     </template>
+
     <slot />
   </UPageSection>
 </template>

@@ -11,7 +11,7 @@ const menuItems = getMainMenuItems(t, localePath)
     color="neutral"
     :ui="{
       list: 'gap-x-3',
-      link: 'relative text-lg font-light text-[#ffffff]',
+      link: 'relative text-lg font-light text-[#ffffff] capitalize',
     }"
   />
 </template>

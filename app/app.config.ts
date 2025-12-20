@@ -21,7 +21,7 @@ export default defineAppConfig({
   ui: {
     button: {
       slots: {
-        base: 'font-light',
+        base: 'font-light capitalize',
       },
     },
     header: {

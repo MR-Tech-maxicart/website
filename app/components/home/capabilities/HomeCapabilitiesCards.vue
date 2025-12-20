@@ -11,7 +11,7 @@ const formatIndexString = (index: number) => String(index + 1).padStart(2, '0')
 </script>
 
 <template>
-  <div class="grid grid-cols-3 gap-1 mt-10">
+  <div class="grid grid-cols-3 gap-1">
     <div class="col-span-2 grid grid-cols-2 grid-rows-3 gap-1">
       <HomeCapabilitiesCardItem
         v-for="(card, _key) in cards"

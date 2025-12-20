@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
 
+  image: {
+    format: ['avif', 'webp'],
+  },
+
   devtools: {
     enabled: false,
   },

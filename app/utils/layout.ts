@@ -1,6 +1,7 @@
 import type {NavigationMenuItem} from "#ui/components/NavigationMenu.vue";
 import type {LocalePathFunction} from "#i18n";
 import { twMerge } from 'tailwind-merge'
+import type {RouteLocationNormalizedLoaded} from "vue-router";
 
 export const cn = twMerge;
 
@@ -40,4 +41,14 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
       to: localePath({ name: 'blog' }),
     },
   ]
+}
+
+export const getPopupLink = (popupName: string, localePath: LocalePathFunction, route: RouteLocationNormalizedLoaded) => {
+  return localePath({
+    ...route,
+    query: {
+      ...route.query,
+      popup: popupName,
+    }
+  })
 }

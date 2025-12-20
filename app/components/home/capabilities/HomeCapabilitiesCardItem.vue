@@ -1,12 +1,9 @@
 <script setup lang="ts">
 import type { ClassValue } from "clsx";
+import type { CapabilitiesCollectionItem } from "@nuxt/content";
 
-type CapabilityCard = {
+interface CapabilityCard extends CapabilitiesCollectionItem {
   id: string
-  key: string
-  icon?: string
-  titleKey: string
-  descriptionKey: string
   badgeKey?: string
 }
 
