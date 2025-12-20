@@ -13,7 +13,7 @@
   /**
    * 1820 + 50 с каждого края
    */
-  --ui-container: 1920px;
+  --ui-container: 1580px;
 
   ---tw-drop-shadow-color: #ffffff;
 }

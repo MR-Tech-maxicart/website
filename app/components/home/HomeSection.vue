@@ -28,7 +28,7 @@ defineProps<{
         :keypath="sectionDescriptionKey"
         scope="global"
         tag="div"
-        class="text-[#f8f8f8] text-[48px] leading-[120%] font-medium tracking-[-.08em] text-balance"
+        class="text-[#f8f8f8] text-[48px] leading-[1.2] font-medium tracking-[-.08em] text-balance"
         :class="[
           sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[67%]',
         ]"

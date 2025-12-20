@@ -26,12 +26,12 @@ export default defineAppConfig({
     },
     header: {
       slots: {
-        container: 'lg:px-[50px]'
+        container: 'w-full max-w-[1920px] lg:px-[50px]'
       },
     },
     pageSection: {
       slots: {
-        container: 'lg:px-[50px]'
+        container: 'lg:px-[20px]'
       },
     },
     navigationMenu: {

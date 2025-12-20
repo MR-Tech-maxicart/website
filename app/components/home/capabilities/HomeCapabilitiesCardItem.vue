@@ -23,7 +23,7 @@ const isActive = defineModel<boolean>('isActive', {
 
 <template>
   <article
-    class="group/card relative overflow-hidden rounded-[10px] transition-colors cursor-default select-none"
+    class="group/card relative overflow-hidden rounded-[10px] transition-colors cursor-default select-none flex h-full flex-col gap-y-7 px-[17px] py-7 justify-around"
     :class="[
       isActive
         ? 'bg-primary text-white'
@@ -34,34 +34,30 @@ const isActive = defineModel<boolean>('isActive', {
     @mouseleave="isActive = false"
     @touchend.passive="isActive = false"
   >
-    <div class="flex h-full flex-col gap-4 p-6 justify-around">
-      <div class="flex items-start gap-3 text-xs uppercase tracking-[0.2em]">
-        <div
-          class="leading-[.95] transition border-b-2 border-b-[#ffffff]/20"
-          :class="[
-            isActive ? 'text-white/50' : 'text-white/20',
-            indexClass,
-          ]"
-        >
-          {{ indexString }}
-        </div>
-      </div>
+    <div
+      class="leading-[.9] border-b-2 border-b-[#ffffff]/20 w-max transition-colors"
+      :class="[
+        isActive ? 'text-white/50' : 'text-white/20',
+        indexClass,
+      ]"
+    >
+      <span class="relative left-1">{{ indexString }}</span>
+    </div>
 
-      <div class="flex flex-col gap-3">
-        <h5
-          class="text-[28px] leading-[1.2] font-medium tracking-[-.09em] transition-colors"
-          :class="[isActive ? 'text-white' : 'text-muted']"
-        >
-          {{ $t(card.titleKey) }}
-        </h5>
+    <div class="flex flex-col gap-y-1">
+      <h5
+        class="text-[28px] leading-[1.2] font-medium tracking-[-.09em] transition-colors"
+        :class="[isActive ? 'text-white' : 'text-muted']"
+      >
+        {{ $t(card.titleKey) }}
+      </h5>
 
-        <p
-          class="text-lg leading-[1.3] transition-colors tracking-[-.07em] font-light"
-          :class="[isActive ? 'text-white' : 'text-muted']"
-        >
-          {{ $t(card.descriptionKey) }}
-        </p>
-      </div>
+      <p
+        class="text-lg leading-[1.3] transition-colors tracking-[-.07em] font-light"
+        :class="[isActive ? 'text-white' : 'text-muted']"
+      >
+        {{ $t(card.descriptionKey) }}
+      </p>
     </div>
   </article>
 </template>

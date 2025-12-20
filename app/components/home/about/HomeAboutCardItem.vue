@@ -24,7 +24,7 @@ const localePath = useLocalePath()
 <template>
   <NuxtLinkLocale
     :to="localePath(link ?? { name: 'index' })"
-    :class="cn('relative bg-[#141414] rounded-md cursor-pointer select-none', $props.class)"
+    :class="cn('relative bg-[#141414] rounded-md cursor-pointer select-none group/card', $props.class)"
   >
     <I18nT
       :keypath="titleKey"

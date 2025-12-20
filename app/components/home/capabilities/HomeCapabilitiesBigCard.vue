@@ -1,5 +1,5 @@
 <template>
-  <article class="relative overflow-hidden rounded-2xl bg-white/5 text-white">
+  <article class="relative overflow-hidden rounded-2xl bg-white/5 text-white px-[25px] pt-[42px] pb-[47px]">
     <NuxtImg
       src="home/capability-card-bg.avif"
       :alt="$t('home.capabilities.bigCard.label')"
@@ -8,20 +8,25 @@
       decoding="async"
     />
 
-    <div class="absolute inset-0 bg-black/55" />
-
-    <div class="relative flex h-full flex-col gap-6 p-8">
-      <div class="text-sm text-white/80">
+    <div class="relative z-10 flex h-full flex-col gap-y-9">
+      <div class="text-sm text-white leading-[1.2] font-light tracking-[-.07em]">
         {{ $t('home.capabilities.bigCard.label') }}
       </div>
 
-      <p class="text-4xl font-semibold leading-tight tracking-tight">
-        {{ $t('home.capabilities.bigCard.title') }}
-      </p>
+      <I18nT
+        scope="global"
+        keypath="home.capabilities.bigCard.title"
+        class="text-[34px] font-semibold leading-[1.13] tracking-[-.07em] text-balance"
+        tag="p"
+      >
+        <br />
+      </I18nT>
 
-      <div class="mt-auto text-sm text-white/80">
+      <div class="mt-auto text-sm leading-[1.2] font-light tracking-[-.07em]">
         {{ $t('home.capabilities.bigCard.caption') }}
       </div>
     </div>
   </article>
 </template>
+<script setup lang="ts">
+</script>
