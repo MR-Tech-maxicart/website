@@ -10,7 +10,7 @@ export default defineContentConfig({
         icon: z.string().optional(),
         titleKey: z.string(),
         descriptionKey: z.string(),
-      })
+      }),
     }),
     scaleItems: defineCollection({
       type: 'data',
@@ -20,7 +20,15 @@ export default defineContentConfig({
         description: z.string().optional(),
         icon: z.string(),
         highlight: z.string(),
-      })
+      }),
+    }),
+    solutions: defineCollection({
+      type: 'data',
+      source: 'solutions/**.yml',
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+      }),
     }),
   },
 })

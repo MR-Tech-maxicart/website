@@ -28,6 +28,7 @@ const { data: scales } = await useAsyncData('scaleItems', () => queryCollection(
     </template>
 
     <HomeScaleCarouselWrapper
+      v-if="scales"
       :items="scales"
     />
   </HomeSection>

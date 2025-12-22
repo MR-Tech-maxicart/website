@@ -99,6 +99,13 @@
         "getAdvice": "Get advice",
         "description": "Submit a request — we’ll show you how to launch without a team"
       }
+    },
+    "solutions": {
+      "title": "Genloft Solutions",
+      "sectionKey": "genloft solutions",
+      "sectionDescription": "A full-stack toolkit to build, launch, and scale product funnels – fast, secure, and optimized for high-risk and high-volume environments.",
+      "sectionSubDescription": "From AI-powered page generation and campaign setup to backend logic, CRM flows, and infrastructure – GENLOFT delivers modular, scalable solutions for trading platforms, wallets, and modern SaaS teams.",
+      "highlightText": "Scale from a single page to a fully distributed cloud architecture - without changing your base setup."
     }
   }
 }

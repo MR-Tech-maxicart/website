@@ -12,5 +12,7 @@ import HomeScaleSection from "~/components/home/scale/HomeScaleSection.vue";
     <HomeCapabilitiesSection />
 
     <HomeScaleSection />
+
+    <HomeSolutionsSection />
   </div>
 </template>
