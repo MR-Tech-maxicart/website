@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxt/image',
+    'nuxt-studio',
   ],
 
   image: {
@@ -49,17 +50,13 @@ export default defineNuxtConfig({
     }]
   },
 
-  fonts: {
-    // families: gilroyVariants.map((variant) => ({
-    //   name: 'Gilroy',
-    //   global: true,
-    //   weight: variant.weight,
-    //   style: 'normal',
-    //   display: 'swap',
-    //   src: [
-    //     { url: `fonts/${variant.file}.woff2`, format: 'woff2' },
-    //     { url: `fonts/${variant.file}.woff`, format: 'woff' }
-    //   ]
-    // }))
+  studio: {
+    route: '/_studio',
+
+    repository: {
+      provider: 'github',
+      owner: 'MR-Tech-maxicart',
+      repo: 'website',
+    },
   },
 })
