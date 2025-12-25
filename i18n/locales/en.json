@@ -106,6 +106,13 @@
       "sectionDescription": "A full-stack toolkit to build, launch, and scale product funnels – fast, secure, and optimized for high-risk and high-volume environments.",
       "sectionSubDescription": "From AI-powered page generation and campaign setup to backend logic, CRM flows, and infrastructure – GENLOFT delivers modular, scalable solutions for trading platforms, wallets, and modern SaaS teams.",
       "highlightText": "Scale from a single page to a fully distributed cloud architecture - without changing your base setup."
+    },
+    "saas": {
+      "title": "SaaS Modules",
+      "sectionKey": "SaaS Modules",
+      "sectionDescription": "GENLOFT is a secure-by-default platform that combines landing automation, CRM, deployment control, and privacy-first infrastructure for trading, finance, and digital product teams.",
+      "sectionSubDescription": "Whether you're a growth team, an agency, or a business working in a restricted environment — GENLOFT gives you a scalable and autonomous digital base.",
+      "highlightText": "Start simple. Scale safely"
     }
   }
 }

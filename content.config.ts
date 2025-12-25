@@ -30,5 +30,14 @@ export default defineContentConfig({
         description: z.string().optional(),
       }),
     }),
+    saasSolutions: defineCollection({
+      type: 'data',
+      source: 'saas-solutions/**.yml',
+      schema: z.object({
+        key: z.string(),
+        title: z.string(),
+        order: z.number().int().positive(),
+      }),
+    }),
   },
 })

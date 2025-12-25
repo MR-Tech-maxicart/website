@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import HomeScaleSection from "~/components/home/scale/HomeScaleSection.vue";
 </script>
 
 <template>
@@ -14,5 +13,7 @@ import HomeScaleSection from "~/components/home/scale/HomeScaleSection.vue";
     <HomeScaleSection />
 
     <HomeSolutionsSection />
+
+    <HomeSaasSection />
   </div>
 </template>
