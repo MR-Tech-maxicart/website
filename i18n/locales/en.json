@@ -3,6 +3,8 @@
   "contact": "Contact",
   "prev": "Previous",
   "next": "Next",
+  "moreDetails": "More Details",
+  "accept": "Accept",
   "menu": {
     "aboutUs": "About us",
     "services": "Services",
@@ -113,6 +115,17 @@
       "sectionDescription": "GENLOFT is a secure-by-default platform that combines landing automation, CRM, deployment control, and privacy-first infrastructure for trading, finance, and digital product teams.",
       "sectionSubDescription": "Whether you're a growth team, an agency, or a business working in a restricted environment — GENLOFT gives you a scalable and autonomous digital base.",
       "highlightText": "Start simple. Scale safely"
+    }
+  },
+  "studio": {
+    "tooltips": {
+      "toggleStudio": "Toggle Studio"
+    }
+  },
+  "cookies": {
+    "bar": {
+      "title": "Cookie files",
+      "description": "Our website uses cookies, including those from web analytics services. By using the website, you consent to the processing of your personal data using cookies. For more information about the processing of personal data, please see our Privacy Policy."
     }
   }
 }

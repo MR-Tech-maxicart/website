@@ -14,6 +14,8 @@ onMounted(() => {
     header.value = document.querySelector('header') as HTMLHeadingElement
   }
 })
+
+const cookieAccepted = useCookie<boolean>('cookie-accepted')
 </script>
 
 <template>
@@ -46,5 +48,11 @@ onMounted(() => {
     <UFooter>
 
     </UFooter>
+
+    <CookieBar
+      v-if="!cookieAccepted"
+      class="fixed bottom-0 left-0 right-0"
+      @accept="cookieAccepted = true"
+    />
   </UApp>
 </template>

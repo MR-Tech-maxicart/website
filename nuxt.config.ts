@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     'nuxt-studio',
   ],
 
+  colorMode: {
+    preference: 'dark',
+  },
+
   image: {
     format: ['avif', 'webp'],
   },

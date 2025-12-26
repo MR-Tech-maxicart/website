@@ -15,7 +15,7 @@ const formatIndexString = (index: number) => String(index + 1).padStart(3, '0')
   :section-sub-description="$t('home.saas.sectionSubDescription')"
   container-class="sm:gap-0 gap-0"
 >
-  <ul class="grid grid-cols-18 gap-1">
+  <ul class="grid grid-cols-18 gap-1 mt-24">
     <HomeSaasItem
       v-for="(item, idx) in saasSolutions"
       :key="item.key"
