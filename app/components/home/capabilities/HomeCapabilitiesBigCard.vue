@@ -1,5 +1,5 @@
 <template>
-  <article class="relative overflow-hidden rounded-2xl bg-white/5 text-white px-[25px] pt-[42px] pb-[47px]">
+  <article class="relative overflow-hidden rounded-2xl bg-white/5 text-[#ffffff] px-[25px] pt-[42px] pb-[47px]">
     <NuxtImg
       src="home/capability-card-bg.avif"
       :alt="$t('home.capabilities.bigCard.label')"
@@ -9,7 +9,7 @@
     />
 
     <div class="relative z-10 flex h-full flex-col gap-y-9">
-      <div class="text-sm text-white leading-[1.2] font-light tracking-[-.07em]">
+      <div class="text-sm text-[#ffffff] leading-[1.2] font-light tracking-[-.07em]">
         {{ $t('home.capabilities.bigCard.label') }}
       </div>
 

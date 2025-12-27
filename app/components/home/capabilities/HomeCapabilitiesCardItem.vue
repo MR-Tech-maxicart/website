@@ -23,8 +23,8 @@ const isActive = defineModel<boolean>('isActive', {
     class="group/card relative overflow-hidden rounded-[10px] transition-colors cursor-default select-none flex h-full flex-col gap-y-7 px-[17px] py-7 justify-around"
     :class="[
       isActive
-        ? 'bg-primary text-white'
-        : 'bg-white/5 text-white/65'
+        ? 'bg-primary text-[#ffffff]'
+        : 'bg-white/5 text-[#ffffff]/65'
     ]"
     @mouseenter="isActive = true"
     @touchstart.passive="isActive = true"
@@ -34,7 +34,7 @@ const isActive = defineModel<boolean>('isActive', {
     <div
       class="leading-[.9] border-b-2 border-b-[#ffffff]/20 w-max transition-colors"
       :class="[
-        isActive ? 'text-white/50' : 'text-white/20',
+        isActive ? 'text-[#ffffff]/50' : 'text-[#ffffff]/20',
         indexClass
       ]"
     >
@@ -44,14 +44,14 @@ const isActive = defineModel<boolean>('isActive', {
     <div class="flex flex-col gap-y-1">
       <h5
         class="text-[28px] leading-[1.2] font-medium tracking-[-.09em] transition-colors"
-        :class="[isActive ? 'text-white' : 'text-muted']"
+        :class="[isActive ? 'text-[#ffffff]' : 'text-muted']"
       >
         {{ $t(card.titleKey) }}
       </h5>
 
       <p
         class="text-lg leading-[1.3] transition-colors tracking-[-.07em] font-light"
-        :class="[isActive ? 'text-white' : 'text-muted']"
+        :class="[isActive ? 'text-[#ffffff]' : 'text-muted']"
       >
         {{ $t(card.descriptionKey) }}
       </p>

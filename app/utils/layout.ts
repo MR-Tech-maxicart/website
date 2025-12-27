@@ -14,7 +14,7 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
     {
       label: t('menu.services'),
       // to: localePath({ name: 'index' }),
-      to: 'https://example.com',
+      to: localePath({ name: 'index' }),
       key: 'services',
       children: [
 
@@ -23,23 +23,48 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
     {
       label: t('menu.forWhom'),
       // to: localePath({ name: 'index' }),
-      to: 'https://example.com'
+      to: localePath({ name: 'index' })
     },
     {
       label: t('menu.platform'),
       // to: localePath({ name: 'index' }),
-      to: 'https://example.com',
+      to: localePath({ name: 'index' }),
       key: 'platform'
     },
     {
       label: t('menu.landingGenerator'),
       // to: localePath({ name: 'index' }),
-      to: 'https://example.com'
+      to: localePath({ name: 'index' })
     },
     {
       label: t('menu.blog'),
       to: localePath({ name: 'blog' })
+    },
+    {
+      label: t('menu.contact'),
+      to: localePath({ name: 'index' })
     }
+  ]
+}
+
+export const getFooterMenuItems = (t: AppTranslator, localePath: LocalePathFunction): NavigationMenuItem[] => {
+  return [
+    {
+      label: t('footer.menu.privacyPolicy'),
+      to: localePath({ name: 'privacy-policy' })
+    },
+    {
+      label: t('footer.menu.termsOfService'),
+      to: localePath({ name: 'index' })
+    },
+    {
+      label: t('footer.menu.gdpr'),
+      to: localePath({ name: 'index' })
+    },
+    {
+      label: t('footer.menu.security'),
+      to: localePath({ name: 'index' })
+    },
   ]
 }
 

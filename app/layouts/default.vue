@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { en } from '@nuxt/ui/locale'
+import LayoutFooter from "~/components/layout/LayoutFooter.vue";
 
 const header = shallowRef<HTMLElement | null>(null)
 const sentinel = useTemplateRef('sentinel')
@@ -45,7 +46,7 @@ const cookieAccepted = useCookie<boolean>('cookie-accepted')
       <slot />
     </UMain>
 
-    <UFooter />
+    <LayoutFooter />
 
     <CookieBar
       v-if="!cookieAccepted"

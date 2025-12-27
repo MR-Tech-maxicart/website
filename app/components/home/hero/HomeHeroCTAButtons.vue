@@ -28,7 +28,7 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
     <UButton
       :to="infraLink"
       variant="outline"
-      class="px-[15px] py-[14px] text-[22px] text-white relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light"
+      class="px-[15px] py-[14px] text-[22px] text-[#ffffff] relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light"
     >
       <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl" />
 
