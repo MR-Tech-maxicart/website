@@ -1,5 +1,5 @@
-import type {ComposerTranslation} from "vue-i18n";
+import type { ComposerTranslation } from 'vue-i18n'
 
 declare global {
-  type AppTranslator = ComposerTranslation<Record<string, any>, 'en'>
+  type AppTranslator = ComposerTranslation<Record<string, string>, 'en'>
 }

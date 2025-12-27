@@ -8,31 +8,31 @@ const infraLink = menuItems.find(item => item.key === 'services')?.to
 </script>
 
 <template>
-<div class="flex gap-x-7">
-  <UButton
-    :to="platformLink"
-    class="px-[15px] py-[14px] text-[22px] gap-3 relative z-10 hover:shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light hover:bg-primary group/btn"
-  >
-    <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl hidden group-hover/btn:block" />
+  <div class="flex gap-x-7">
+    <UButton
+      :to="platformLink"
+      class="px-[15px] py-[14px] text-[22px] gap-3 relative z-10 hover:shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light hover:bg-primary group/btn"
+    >
+      <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl hidden group-hover/btn:block" />
 
-    {{ $t('home.hero.cta.platform') }}
+      {{ $t('home.hero.cta.platform') }}
 
-    <template #trailing>
-      <UIcon
-        name="maxicart:arrow-external"
-        class="fill-white size-[18px] mr-1"
-      />
-    </template>
-  </UButton>
+      <template #trailing>
+        <UIcon
+          name="maxicart:arrow-external"
+          class="fill-white size-[18px] mr-1"
+        />
+      </template>
+    </UButton>
 
-  <UButton
-    :to="infraLink"
-    variant="outline"
-    class="px-[15px] py-[14px] text-[22px] text-white relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light"
-  >
-    <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl" />
+    <UButton
+      :to="infraLink"
+      variant="outline"
+      class="px-[15px] py-[14px] text-[22px] text-white relative z-10 hover:bg-primary shadow-[0_0_48px_rgba(14,52,180,0.55)] font-light"
+    >
+      <span class="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl" />
 
-    {{ $t('home.hero.cta.explore') }}
-  </UButton>
-</div>
+      {{ $t('home.hero.cta.explore') }}
+    </UButton>
+  </div>
 </template>

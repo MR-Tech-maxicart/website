@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {ScaleItemsCollectionItem} from "@nuxt/content";
+import type { ScaleItemsCollectionItem } from '@nuxt/content'
 
 export type HomeScaleCarouselExposed = {
   slidePrev: () => void
@@ -24,13 +24,13 @@ defineExpose<HomeScaleCarouselExposed>({
 <template>
   <UCarousel
     ref="carousel"
-    loop
     v-slot="{ item }"
+    loop
     :items="items"
     :ui="{
       viewport: 'h-full',
       container: 'h-full',
-      item: 'h-full grid grid-cols-5 grid-rows-3 gap-1',
+      item: 'h-full grid grid-cols-5 grid-rows-3 gap-1'
     }"
   >
     <HomeScaleCarouselItem

@@ -7,22 +7,18 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxt/image',
-    'nuxt-studio',
+    'nuxt-studio'
   ],
 
-  colorMode: {
-    preference: 'dark',
-  },
-
-  image: {
-    format: ['avif', 'webp'],
-  },
-
   devtools: {
-    enabled: false,
+    enabled: false
   },
 
   css: ['~/assets/css/main.css'],
+
+  colorMode: {
+    preference: 'dark'
+  },
 
   routeRules: {
     '/': { prerender: true }
@@ -42,16 +38,20 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-    ],
+      { code: 'en', name: 'English', file: 'en.json' }
+    ]
   },
 
   icon: {
     mode: 'svg',
     customCollections: [{
       prefix: 'maxicart',
-      dir: './app/assets/icons',
+      dir: './app/assets/icons'
     }]
+  },
+
+  image: {
+    format: ['avif', 'webp']
   },
 
   studio: {
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     repository: {
       provider: 'github',
       owner: 'MR-Tech-maxicart',
-      repo: 'website',
-    },
-  },
+      repo: 'website'
+    }
+  }
 })

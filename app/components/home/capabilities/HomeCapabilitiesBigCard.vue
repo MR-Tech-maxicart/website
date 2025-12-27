@@ -19,7 +19,7 @@
         class="text-[34px] font-semibold leading-[1.13] tracking-[-.07em] text-balance"
         tag="p"
       >
-        <br />
+        <br>
       </I18nT>
 
       <div class="mt-auto text-sm leading-[1.2] font-light tracking-[-.07em]">
@@ -28,5 +28,6 @@
     </div>
   </article>
 </template>
+
 <script setup lang="ts">
 </script>

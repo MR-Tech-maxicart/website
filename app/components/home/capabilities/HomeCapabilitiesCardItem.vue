@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ClassValue } from "clsx";
-import type { CapabilitiesCollectionItem } from "@nuxt/content";
+import type { ClassValue } from 'clsx'
+import type { CapabilitiesCollectionItem } from '@nuxt/content'
 
 interface CapabilityCard extends CapabilitiesCollectionItem {
   id: string
@@ -14,7 +14,7 @@ defineProps<{
 }>()
 
 const isActive = defineModel<boolean>('isActive', {
-  default: false,
+  default: false
 })
 </script>
 
@@ -35,7 +35,7 @@ const isActive = defineModel<boolean>('isActive', {
       class="leading-[.9] border-b-2 border-b-[#ffffff]/20 w-max transition-colors"
       :class="[
         isActive ? 'text-white/50' : 'text-white/20',
-        indexClass,
+        indexClass
       ]"
     >
       <span class="relative left-1">{{ indexString }}</span>

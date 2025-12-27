@@ -3,9 +3,9 @@
 </script>
 
 <template>
-<UPageHeader
-  :title="$t('blog.pageTitle', 'Blog')"
-/>
+  <UPageHeader
+    :title="$t('blog.pageTitle', 'Blog')"
+  />
 </template>
 
 <style scoped>

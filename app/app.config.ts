@@ -4,35 +4,35 @@ export default defineAppConfig({
       {
         titleKey: 'telegram',
         link: 'https://t.me/max_cscart',
-        icon: 'maxicart:telegram',
+        icon: 'maxicart:telegram'
       },
       {
         titleKey: 'instagram',
         link: 'https://t.me/max_greekk',
-        icon: 'maxicart:instagram',
+        icon: 'maxicart:instagram'
       },
       {
         titleKey: 'facebook',
         link: 'https://www.facebook.com',
-        icon: 'maxicart:facebook',
-      },
-    ],
+        icon: 'maxicart:facebook'
+      }
+    ]
   },
   ui: {
     button: {
       slots: {
-        base: 'font-light capitalize',
-      },
+        base: 'font-light capitalize'
+      }
     },
     header: {
       slots: {
         container: 'w-full max-w-[1920px] lg:px-[50px]'
-      },
+      }
     },
     pageSection: {
       slots: {
         container: 'lg:px-[20px]'
-      },
+      }
     },
     navigationMenu: {
       compoundVariants: [
@@ -43,8 +43,8 @@ export default defineAppConfig({
           class: {
             link: 'before:bg-[#ffffff]/10'
           }
-        },
-      ],
-    },
-  },
+        }
+      ]
+    }
+  }
 })

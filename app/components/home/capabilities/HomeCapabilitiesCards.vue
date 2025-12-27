@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {CapabilitiesCollectionItem} from "@nuxt/content";
+import type { CapabilitiesCollectionItem } from '@nuxt/content'
 
 defineProps<{
   cards: CapabilitiesCollectionItem[]
@@ -20,7 +20,7 @@ const formatIndexString = (index: number) => String(index + 1).padStart(2, '0')
         :index-string="formatIndexString(_key)"
         :index-class="_key === 0 ? 'text-[63.13px]' : 'text-[36.98px] h-[45px] '"
         :is-active="activeCard === _key"
-        @update:isActive="(val: boolean) => {
+        @update:is-active="(val: boolean) => {
           if (val) {
             activeCard = _key as number
           }

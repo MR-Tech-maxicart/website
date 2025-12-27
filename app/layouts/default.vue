@@ -6,7 +6,7 @@ const sentinel = useTemplateRef('sentinel')
 
 const { isSticky } = useStickyObserver({
   element: header,
-  sentinel,
+  sentinel
 }, '-24px 0px 0px 0px')
 
 onMounted(() => {
@@ -27,7 +27,7 @@ const cookieAccepted = useCookie<boolean>('cookie-accepted')
     />
     <UHeader
       :ui="{
-        root: 'border-none py-7 sticky top-0' + (isSticky ? '' : ' backdrop-blur-none bg-[none]'),
+        root: 'border-none py-7 sticky top-0' + (isSticky ? '' : ' backdrop-blur-none bg-[none]')
       }"
     >
       <template #left>
@@ -45,9 +45,7 @@ const cookieAccepted = useCookie<boolean>('cookie-accepted')
       <slot />
     </UMain>
 
-    <UFooter>
-
-    </UFooter>
+    <UFooter />
 
     <CookieBar
       v-if="!cookieAccepted"

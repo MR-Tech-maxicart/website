@@ -21,7 +21,7 @@ const { data: scales } = await useAsyncData('scaleItems', () => queryCollection(
             tag="span"
             class="text-muted text-[19px] tracking-[-.07em]"
           >
-            <br />
+            <br>
           </I18nT>
         </template>
       </HomeSectionIdxAndKey>

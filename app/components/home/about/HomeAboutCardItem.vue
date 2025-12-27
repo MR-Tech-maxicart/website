@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type PrimitiveProps } from 'reka-ui'
-import type { HTMLAttributes } from "vue"
+import type { PrimitiveProps } from 'reka-ui'
+import type { HTMLAttributes } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 
 export type HomeCardAboutItemKey = 'zeroTrust' | 'gdpr' | 'apiFirst' | 'cloud'
@@ -13,7 +13,7 @@ export interface HomeAboutCardItemProps {
 
 interface Props extends PrimitiveProps, HomeAboutCardItemProps {
   itemKey: HomeCardAboutItemKey
-  class?: HTMLAttributes["class"]
+  class?: HTMLAttributes['class']
 }
 
 defineProps<Props>()
@@ -32,7 +32,7 @@ const localePath = useLocalePath()
       tag="div"
       class="max-w-[315px] text-[35px] tracking-tighter leading-[1.1715] relative z-10 ml-10 mt-10"
     >
-      <br />
+      <br>
     </I18nT>
 
     <span

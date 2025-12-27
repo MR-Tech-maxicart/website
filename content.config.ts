@@ -9,8 +9,8 @@ export default defineContentConfig({
         key: z.string(),
         icon: z.string().optional(),
         titleKey: z.string(),
-        descriptionKey: z.string(),
-      }),
+        descriptionKey: z.string()
+      })
     }),
     scaleItems: defineCollection({
       type: 'data',
@@ -19,16 +19,16 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string().optional(),
         icon: z.string(),
-        highlight: z.string(),
-      }),
+        highlight: z.string()
+      })
     }),
     solutions: defineCollection({
       type: 'data',
       source: 'solutions/**.yml',
       schema: z.object({
         title: z.string(),
-        description: z.string().optional(),
-      }),
+        description: z.string().optional()
+      })
     }),
     saasSolutions: defineCollection({
       type: 'data',
@@ -36,8 +36,8 @@ export default defineContentConfig({
       schema: z.object({
         key: z.string(),
         title: z.string(),
-        order: z.number().int().positive(),
-      }),
-    }),
-  },
+        order: z.number().int().positive()
+      })
+    })
+  }
 })

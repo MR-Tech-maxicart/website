@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {NuxtError} from "#app";
+import type { NuxtError } from '#app'
 
 defineProps<{
   error: NuxtError
@@ -7,8 +7,7 @@ defineProps<{
 </script>
 
 <template>
-<NuxtLayout>
-  <UError :error="error" />
-</NuxtLayout>
+  <NuxtLayout>
+    <UError :error="error" />
+  </NuxtLayout>
 </template>
-

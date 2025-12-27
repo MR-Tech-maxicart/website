@@ -12,8 +12,8 @@ const handleNextClick = (e: PointerEvent) => emit('next', e)
   <div class="bg-[#141414] rounded-md px-3 py-[70px] flex items-center gap-x-12 justify-center">
     <UButton
       variant="ghost"
-      @click="(e) => handlePrevClick(e as PointerEvent)"
       class="cursor-pointer"
+      @click="(e) => handlePrevClick(e as PointerEvent)"
     >
       <UIcon
         name="maxicart:arrow-left-long"
@@ -23,8 +23,8 @@ const handleNextClick = (e: PointerEvent) => emit('next', e)
 
     <UButton
       variant="ghost"
-      @click="(e) => handleNextClick(e as PointerEvent)"
       class="cursor-pointer"
+      @click="(e) => handleNextClick(e as PointerEvent)"
     >
       <UIcon
         name="maxicart:arrow-right-long"

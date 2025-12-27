@@ -6,7 +6,7 @@
   <UPageSection
     :ui="{
       root: 'static min-h-[calc(100vh-var(--ui-header-height))]',
-      container: 'py-0 lg:py-0 xl:py-24 sm:gap-24 relative z-10',
+      container: 'py-0 lg:py-0 xl:py-24 sm:gap-24 relative z-10'
     }"
   >
     <template #top>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {ClassNameValue} from "tailwind-merge";
+import type { ClassNameValue } from 'tailwind-merge'
 
 defineProps<{
   title: string
@@ -11,7 +11,7 @@ defineProps<{
 }>()
 
 defineSlots<{
-  sectionIdAndKey?: (props: { sectionNumber: string; sectionKey: string }) => VNode
+  sectionIdAndKey?: (props: { sectionNumber: string, sectionKey: string }) => VNode
   default: VNode
 }>()
 </script>
@@ -21,7 +21,7 @@ defineSlots<{
     :ui="{
       container: cn('lg:py-32 sm:gap-24', containerClass),
       title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-tighter leading-none text-muted text-left',
-      body: 'mt-[50px] flex',
+      body: 'mt-[50px] flex'
     }"
     :title="title"
   >
@@ -45,10 +45,10 @@ defineSlots<{
         tag="div"
         class="text-[#f8f8f8] text-[48px] leading-[1.2] font-medium tracking-[-.08em] text-balance"
         :class="[
-          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[70%]',
+          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[70%]'
         ]"
       >
-        <br />
+        <br>
       </I18nT>
 
       <p
