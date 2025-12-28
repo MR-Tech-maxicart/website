@@ -46,5 +46,16 @@ export default defineAppConfig({
         }
       ]
     }
+    // ,
+    // checkbox: {
+    //   slots: {
+    //     base: 'ring-primary'
+    //   }
+    // }
+    // , formField: {
+    //   slots: {
+    //     label: 'leading-[1.3]'
+    //   }
+    // }
   }
 })

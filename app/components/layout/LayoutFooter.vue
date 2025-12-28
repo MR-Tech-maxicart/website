@@ -5,7 +5,7 @@
 <template>
   <UFooter
     :ui="{
-      top: 'container mx-auto justify-between',
+      top: 'container mx-auto flex justify-between',
       bottom: 'container mx-auto flex gap-x-4 justify-between',
       left: 'hidden',
       right: 'hidden',
@@ -23,7 +23,7 @@
         <br>
       </I18nT>
 
-      <ContactForm />
+      <ContactForm class="mt-9" />
     </template>
 
     <AppLogo />

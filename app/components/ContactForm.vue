@@ -5,11 +5,11 @@ import type { FormSubmitEvent, FormErrorEvent } from '@nuxt/ui'
 const { t } = useI18n()
 
 const schema = v.object({
-  fullName: v.string(),
+  fullName: v.pipe(v.string(), v.minLength(2), v.maxLength(50)),
   email: v.optional(v.pipe(v.string(), v.email())),
   phone: v.optional(v.string()),
   message: v.optional(v.string()),
-  consest: v.literal(true, t('forms.checkConsest') )
+  consest: v.literal(true, t('forms.checkConsest'))
 })
 
 type Schema = v.InferOutput<typeof schema>
@@ -40,58 +40,71 @@ async function onError(event: FormErrorEvent) {
     :state="state"
     @submit="onSubmit"
     @error="onError"
+    :validateOn="['blur', 'change']"
+    class="flex flex-col gap-y-[30px] max-w-[516px]"
   >
-    <UFormField
+    <FormField
       :label="$t('fullName')"
       name="fullName"
     >
-      <UInput
+      <FormInput
         v-model="state.fullName"
       />
-    </UFormField>
+    </FormField>
 
-    <div class="grid grid-cols-2">
-      <UFormField
+    <div class="grid grid-cols-2 gap-x-1.5">
+      <FormField
         :label="$t('email')"
         name="email"
       >
-        <UInput
+        <FormInput
+          type="email"
           v-model="state.email"
         />
-      </UFormField>
+      </FormField>
 
-      <UFormField
+      <FormField
         :label="$t('phone')"
         name="phone"
       >
-        <UInput
+        <FormInput
+          type="tel"
           v-model="state.phone"
         />
-      </UFormField>
+      </FormField>
     </div>
 
-    <UFormField
+    <FormField
       :label="$t('forms.message')"
       name="message"
     >
-      <UInput
+      <FormInput
         v-model="state.message"
       />
-    </UFormField>
+    </FormField>
 
     <UFormField
       name="consest"
+      class="-mt-2"
     >
       <UCheckbox
         :label="$t('forms.consest')"
         v-model="state.consest"
+        :ui="{
+          base: `data-[state=checked]:ring-primary ring-2 ring-[#606060]`,
+          label: 'text-[16px] leading-[1.3] text-[#606060]',
+          indicator: 'bg-transparent text-primary',
+          icon: 'size-[85%]'
+        }"
       />
     </UFormField>
-
 
     <UButton
       type="submit"
       :label="$t('forms.submit')"
+      :ui="{
+        base: 'justify-center font-semibold text-[27px] leading-[1.2] py-3',
+      }"
     />
   </UForm>
 </template>

@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxt/image',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxtjs/seo'
   ],
 
   devtools: {
@@ -62,5 +63,10 @@ export default defineNuxtConfig({
       owner: 'MR-Tech-maxicart',
       repo: 'website'
     }
+  },
+
+  site: {
+    name: 'GENLOFT',
+    url: process.env.SITE_URL ?? 'http://localhost:3000',
   }
 })
