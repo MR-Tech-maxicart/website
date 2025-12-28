@@ -34,7 +34,9 @@ const resolvedError = computed(() => {
     return props.error
   }
 
-  if (!props.name) { return undefined }
+  if (!props.name) {
+    return undefined
+  }
 
   return formErrors?.value?.find(error => error.name === props.name)?.message
 })
@@ -42,12 +44,12 @@ const resolvedError = computed(() => {
 const errorMessage = computed(() => typeof resolvedError.value === 'string' ? resolvedError.value : undefined)
 
 watch(
-  () => ({ name: props.name, id: inputId.value }),
-  (current, previous) => {
-    if (!formInputs?.value) { return }
-
-    if (previous?.name && previous.name !== current.name) {
-      delete formInputs.value[previous.name]
+  () => ({
+    name: props.name,
+    id: inputId.value
+  }), (current) => {
+    if (!formInputs?.value) {
+      return
     }
 
     if (current.name) {
@@ -56,12 +58,6 @@ watch(
   },
   { immediate: true }
 )
-
-onBeforeUnmount(() => {
-  if (formInputs?.value && props.name) {
-    delete formInputs.value[props.name]
-  }
-})
 
 provide(inputIdInjectionKey, inputId)
 provide(formFieldInjectionKey, computed(() => ({

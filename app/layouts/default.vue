@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { en } from '@nuxt/ui/locale'
-import LayoutFooter from "~/components/layout/LayoutFooter.vue";
+import LayoutFooter from '~/components/layout/LayoutFooter.vue'
 
 const header = shallowRef<HTMLElement | null>(null)
 const sentinel = useTemplateRef('sentinel')

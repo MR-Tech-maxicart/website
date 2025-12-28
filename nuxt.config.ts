@@ -17,8 +17,19 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  site: {
+    name: 'GENLOFT',
+    url: process.env.SITE_URL ?? 'http://localhost:3000'
+  },
+
   colorMode: {
     preference: 'dark'
+  },
+
+  runtimeConfig: {
+    googleServiceAccountJsonPath: process.env.GOOGLE_SERVICE_ACCOUNT_KEY_PATH,
+    googleSheetsSpreadsheetId: process.env.GOOGLE_SHEET_ID,
+    googleSheetsRange: process.env.GOOGLE_SHEETS_RANGE || 'Submits!A1'
   },
 
   routeRules: {
@@ -63,10 +74,5 @@ export default defineNuxtConfig({
       owner: 'MR-Tech-maxicart',
       repo: 'website'
     }
-  },
-
-  site: {
-    name: 'GENLOFT',
-    url: process.env.SITE_URL ?? 'http://localhost:3000',
   }
 })

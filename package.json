@@ -21,6 +21,7 @@
     "better-sqlite3": "^12.5.0",
     "clsx": "^2.1.1",
     "dompurify": "^3.3.1",
+    "googleapis": "^169.0.0",
     "nuxt": "^4.2.2",
     "nuxt-studio": "1.0.0-beta.3",
     "tailwind-merge": "^3.4.0",
@@ -32,6 +33,5 @@
     "eslint": "^9.39.2",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.1"
-  },
-  "packageManager": "pnpm@10.23.0"
+  }
 }

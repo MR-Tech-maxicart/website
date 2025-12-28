@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { type HTMLAttributes } from 'vue'
+import type { HTMLAttributes } from 'vue'
 import { useVModel } from '@vueuse/core'
-import { useFormField } from "#imports";
+import { useFormField } from '#imports'
 
 defineOptions({ inheritAttrs: false })
 
@@ -21,10 +21,10 @@ const props = withDefaults(defineProps<{
 
 const emits = defineEmits<{
   'update:modelValue': [value: string | number | null | undefined]
-  blur: [event: FocusEvent]
-  focus: [event: FocusEvent]
-  change: [event: Event]
-  input: [event: Event]
+  'blur': [event: FocusEvent]
+  'focus': [event: FocusEvent]
+  'change': [event: Event]
+  'input': [event: Event]
 }>()
 
 const modelValue = useVModel(props, 'modelValue', emits, { passive: true })

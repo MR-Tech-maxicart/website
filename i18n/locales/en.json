@@ -15,7 +15,7 @@
     "platform": "Platform",
     "landingGenerator": "Landing generator",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contacts"
   },
   "telegram": "Telegram",
   "instagram": "Instagram",
@@ -143,8 +143,8 @@
     }
   },
   "forms": {
-    "consest": "By clicking the “Submit” button, you consent to the processing of your personal data.",
-    "checkConsest": "You should agree to our terms and conditions.",
+    "consent": "By clicking the “Submit” button, you consent to the processing of your personal data.",
+    "checkConsent": "You should agree to our terms and conditions.",
     "submit": "Submit",
     "message": "Message"
   },

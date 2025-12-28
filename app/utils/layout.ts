@@ -60,7 +60,7 @@ export const getFooterMenuItems = (t: AppTranslator, localePath: LocalePathFunct
     {
       label: t('footer.menu.security'),
       to: localePath({ name: 'security' })
-    },
+    }
   ]
 }
 

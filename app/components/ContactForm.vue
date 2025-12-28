@@ -9,7 +9,7 @@ const schema = v.object({
   email: v.optional(v.pipe(v.string(), v.email())),
   phone: v.optional(v.string()),
   message: v.optional(v.string()),
-  consest: v.literal(true, t('forms.checkConsest'))
+  consent: v.literal(true, t('forms.checkConsent'))
 })
 
 type Schema = v.InferOutput<typeof schema>
@@ -18,11 +18,18 @@ const state = reactive<Schema>({
   email: undefined,
   phone: undefined,
   message: undefined,
-  consest: true
+  consent: true
 })
 
+const disabled = ref<boolean>(false)
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-  console.log(event)
+  disabled.value = true
+  await $fetch('/api/form-submit', {
+    method: 'POST',
+    body: event.data
+  })
+
+  disabled.value = false
 }
 
 async function onError(event: FormErrorEvent) {
@@ -38,10 +45,11 @@ async function onError(event: FormErrorEvent) {
   <UForm
     :schema="schema"
     :state="state"
+    :validate-on="['blur', 'change']"
+    class="flex flex-col gap-y-[30px] max-w-[516px]"
+    :disabled="disabled"
     @submit="onSubmit"
     @error="onError"
-    :validateOn="['blur', 'change']"
-    class="flex flex-col gap-y-[30px] max-w-[516px]"
   >
     <FormField
       :label="$t('fullName')"
@@ -58,8 +66,8 @@ async function onError(event: FormErrorEvent) {
         name="email"
       >
         <FormInput
-          type="email"
           v-model="state.email"
+          type="email"
         />
       </FormField>
 
@@ -68,8 +76,8 @@ async function onError(event: FormErrorEvent) {
         name="phone"
       >
         <FormInput
-          type="tel"
           v-model="state.phone"
+          type="tel"
         />
       </FormField>
     </div>
@@ -84,12 +92,12 @@ async function onError(event: FormErrorEvent) {
     </FormField>
 
     <UFormField
-      name="consest"
+      name="consent"
       class="-mt-2"
     >
       <UCheckbox
-        :label="$t('forms.consest')"
-        v-model="state.consest"
+        v-model="state.consent"
+        :label="$t('forms.consent')"
         :ui="{
           base: `data-[state=checked]:ring-primary ring-2 ring-[#606060]`,
           label: 'text-[16px] leading-[1.3] text-[#606060]',
@@ -103,8 +111,11 @@ async function onError(event: FormErrorEvent) {
       type="submit"
       :label="$t('forms.submit')"
       :ui="{
-        base: 'justify-center font-semibold text-[27px] leading-[1.2] py-3',
+        base: 'justify-center font-semibold text-[27px] leading-[1.2] py-3'
       }"
+      :disabled="disabled"
+      :loading="disabled"
+      loading-icon="i-lucide-loader"
     />
   </UForm>
 </template>
