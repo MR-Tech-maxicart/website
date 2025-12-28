@@ -1,13 +1,7 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <UPageHeader
-    :title="$t('blog.pageTitle', 'Blog')"
+  <PageIsUnderConstruction
+    :headline="$t('pages.blog.headline')"
+    :title="$t('pages.blog.title')"
+    :description="$t('pages.blog.description')"
   />
 </template>
-
-<style scoped>
-
-</style>

@@ -147,5 +147,57 @@
     "checkConsest": "You should agree to our terms and conditions.",
     "submit": "Submit",
     "message": "Message"
+  },
+  "pages": {
+    "privacyPolicy": {
+      "headline": "Coming soon",
+      "title": "Privacy Policy",
+      "description": "We're documenting the full privacy policy details. Check back soon or contact our team if you need the latest copy."
+    },
+    "termsOfService": {
+      "headline": "Coming soon",
+      "title": "Terms of Service",
+      "description": "We're finalizing the legal terms that govern the GenLoft platform. Reach out to our legal team for early access."
+    },
+    "gdpr": {
+      "headline": "Coming soon",
+      "title": "GDPR & Data Processing",
+      "description": "We're outlining our GDPR and data processing controls in a dedicated resource."
+    },
+    "security": {
+      "headline": "Coming soon",
+      "title": "Security",
+      "description": "We're preparing a detailed overview of GenLoft's security practices, audits, and certifications."
+    },
+    "services": {
+      "headline": "Page in progress",
+      "title": "Services",
+      "description": "We're curating the complete list of services and workflows we provide for automation-ready teams."
+    },
+    "forWhom": {
+      "headline": "Page in progress",
+      "title": "Who we help",
+      "description": "We're highlighting the industries and teams that benefit most from GenLoft. Come back soon for tailored examples."
+    },
+    "platform": {
+      "headline": "Page in progress",
+      "title": "Platform",
+      "description": "We're assembling a full tour of the GenLoft platform modules, integrations, and deployment options."
+    },
+    "landingGenerator": {
+      "headline": "Page in progress",
+      "title": "Landing Generator",
+      "description": "We're preparing documentation for the landing generator experience and AI-assisted tooling."
+    },
+    "contact": {
+      "headline": "Page in progress",
+      "title": "Contact",
+      "description": "We're polishing a dedicated contact experience. Until then, please reach out through the footer form."
+    },
+    "blog": {
+      "headline": "Updates underway",
+      "title": "Blog",
+      "description": "We're crafting the first round of thought pieces, changelog notes, and customer stories. Stay tuned."
+    }
   }
 }

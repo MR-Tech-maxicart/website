@@ -13,8 +13,7 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
     },
     {
       label: t('menu.services'),
-      // to: localePath({ name: 'index' }),
-      to: localePath({ name: 'index' }),
+      to: localePath({ name: 'services' }),
       key: 'services',
       children: [
 
@@ -22,19 +21,16 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
     },
     {
       label: t('menu.forWhom'),
-      // to: localePath({ name: 'index' }),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'for-whom' })
     },
     {
       label: t('menu.platform'),
-      // to: localePath({ name: 'index' }),
-      to: localePath({ name: 'index' }),
+      to: localePath({ name: 'platform' }),
       key: 'platform'
     },
     {
       label: t('menu.landingGenerator'),
-      // to: localePath({ name: 'index' }),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'landing-generator' })
     },
     {
       label: t('menu.blog'),
@@ -42,7 +38,7 @@ export const getMainMenuItems = (t: AppTranslator, localePath: LocalePathFunctio
     },
     {
       label: t('menu.contact'),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'contact' })
     }
   ]
 }
@@ -55,15 +51,15 @@ export const getFooterMenuItems = (t: AppTranslator, localePath: LocalePathFunct
     },
     {
       label: t('footer.menu.termsOfService'),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'terms-of-service' })
     },
     {
       label: t('footer.menu.gdpr'),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'gdpr' })
     },
     {
       label: t('footer.menu.security'),
-      to: localePath({ name: 'index' })
+      to: localePath({ name: 'security' })
     },
   ]
 }
