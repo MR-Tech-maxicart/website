@@ -2,6 +2,15 @@
 import * as v from 'valibot'
 import type { FormSubmitEvent, FormErrorEvent } from '@nuxt/ui'
 
+defineProps<{
+  id?: string
+  showSubmitButton?: boolean
+}>()
+
+const emit = defineEmits<{
+  formProcessed: []
+}>()
+
 const { t } = useI18n()
 
 const schema = v.object({
@@ -21,7 +30,9 @@ const state = reactive<Schema>({
   consent: true
 })
 
-const disabled = ref<boolean>(false)
+const disabled = defineModel<boolean>('disabled', {
+  default: false
+})
 async function onSubmit(event: FormSubmitEvent<Schema>) {
   disabled.value = true
   await $fetch('/api/form-submit', {
@@ -30,6 +41,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   })
 
   disabled.value = false
+  emit('formProcessed')
 }
 
 async function onError(event: FormErrorEvent) {
@@ -43,6 +55,7 @@ async function onError(event: FormErrorEvent) {
 
 <template>
   <UForm
+    :id="id"
     :schema="schema"
     :state="state"
     :validate-on="['blur', 'change']"
@@ -108,12 +121,12 @@ async function onError(event: FormErrorEvent) {
     </UFormField>
 
     <UButton
+      v-if="showSubmitButton !== false"
       type="submit"
       :label="$t('forms.submit')"
       :ui="{
         base: 'justify-center font-semibold text-[27px] leading-[1.2] py-3'
       }"
-      :disabled="disabled"
       :loading="disabled"
       loading-icon="i-lucide-loader"
     />

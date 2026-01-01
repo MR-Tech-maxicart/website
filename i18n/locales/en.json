@@ -8,6 +8,7 @@
   "fullName": "Full Name",
   "email": "Email",
   "phone": "Phone",
+  "dismiss": "Dismiss",
   "menu": {
     "aboutUs": "About us",
     "services": "Services",
@@ -198,6 +199,12 @@
       "headline": "Updates underway",
       "title": "Blog",
       "description": "We're crafting the first round of thought pieces, changelog notes, and customer stories. Stay tuned."
+    }
+  },
+  "slideover": {
+    "contact": {
+      "title": "Contact us",
+      "description": "Fill free to contact us with any questions or feedback."
     }
   }
 }

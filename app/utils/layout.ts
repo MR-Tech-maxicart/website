@@ -1,7 +1,7 @@
 import type { NavigationMenuItem } from '#ui/components/NavigationMenu.vue'
 import type { LocalePathFunction } from '#i18n'
-import { twMerge } from 'tailwind-merge'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
+import { twMerge } from 'tailwind-merge'
 
 export const cn = twMerge
 

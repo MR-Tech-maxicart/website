@@ -17,12 +17,12 @@ const props = defineProps<{
 }>()
 
 const generatedId = useId()
-const inputId = ref(props.id ?? (props.name ? `field-${props.name}` : generatedId))
+const inputId = ref(props.id ?? generatedId)
 
 watch(
-  () => [props.id, props.name],
-  ([explicitId, fieldName]) => {
-    inputId.value = explicitId ?? (fieldName ? `field-${fieldName}` : generatedId)
+  () => [props.id],
+  ([explicitId]) => {
+    inputId.value = explicitId ?? generatedId
   }
 )
 

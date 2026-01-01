@@ -19,6 +19,9 @@ export default defineAppConfig({
     ]
   },
   ui: {
+    icons: {
+      menu: 'maxicart:menu'
+    },
     button: {
       slots: {
         base: 'font-light capitalize'
@@ -32,6 +35,11 @@ export default defineAppConfig({
     pageSection: {
       slots: {
         container: 'lg:px-[20px]'
+      }
+    },
+    slideover: {
+      slots: {
+        title: 'text-[#ffffff]'
       }
     },
     navigationMenu: {
