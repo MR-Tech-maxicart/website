@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import type { HomeAboutCardItemProps, HomeCardAboutItemKey } from '~/components/home/about/HomeAboutCardItem.vue'
+import type { HTMLAttributes } from 'vue'
+
+defineProps<{
+  containerClass?: HTMLAttributes['class']
+}>()
 
 const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
   zeroTrust: {
@@ -28,7 +33,7 @@ const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
     :section-key="$t('home.about.sectionKey')"
     section-description-key="home.about.sectionDescription"
     :section-sub-description="$t('home.about.sectionSubDescription')"
-    class="mt-8"
+    :container-class="containerClass"
   >
     <div class="grid lg:grid-cols-[346fr_346fr_330fr_516fr] gap-x-1">
       <HomeAboutCardItem

@@ -24,7 +24,7 @@
     "hero": {
       "innovate_automate": "You innovate, we automate.",
       "heading": {
-        "title": "The {0} and digital{1}asset products.",
+        "title": "The {0} and digital asset products.",
         "titleHighlight": "infrastructure layer for modern trading",
         "subtitle": "Secure, modular SaaS to launch and scale exchanges, wallets, and high-{0}volume digital products without rebuilding your stack."
       },

@@ -5,14 +5,14 @@
 <template>
   <UPageSection
     :ui="{
-      root: 'static min-h-[calc(100vh-var(--ui-header-height))]',
+      root: 'bottom-[calc(var(--ui-header-height)+var(--spacing)*6)] pt-[calc(var(--ui-header-height)+var(--spacing)*6)] min-h-[calc(100vh-var(--ui-header-height))]',
       container: 'py-0 lg:py-0 xl:py-24 sm:gap-24 relative z-10'
     }"
   >
     <template #top>
       <NuxtImg
         src="home/hero-bg.avif"
-        class="absolute top-0 left-0 min-h-dvh min-w-dvw"
+        class="absolute top-0 left-0 w-full h-full object-cover"
       />
     </template>
 

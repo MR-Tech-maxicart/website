@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ClassNameValue } from 'tailwind-merge'
+import type { HTMLAttributes } from 'vue'
 
 defineProps<{
   title: string
@@ -7,7 +7,7 @@ defineProps<{
   sectionKey: string
   sectionDescriptionKey: string
   sectionSubDescription?: string
-  containerClass?: ClassNameValue
+  containerClass?: HTMLAttributes['class']
 }>()
 
 defineSlots<{
@@ -21,7 +21,7 @@ defineSlots<{
     :ui="{
       container: cn('lg:py-32 sm:gap-24', containerClass),
       title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-tighter leading-none text-muted text-left',
-      body: 'mt-[50px] flex'
+      body: 'mt-[80px] flex'
     }"
     :title="title"
   >
