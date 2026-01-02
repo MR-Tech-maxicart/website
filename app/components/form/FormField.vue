@@ -80,7 +80,7 @@ const errorId = computed(() => errorMessage.value ? `${inputId.value}-error` : u
     <Label
       v-if="label?.length"
       :for="inputId"
-      class="text-lg font-medium text-white translate-y-[36px] peer-[:not(:placeholder-shown)]:translate-y-2 peer-focus:translate-y-2 transition"
+      class="lg:text-[18px] font-medium text-white translate-y-[32px] lg:translate-y-[36px] peer-[:not(:placeholder-shown)]:translate-y-2 peer-focus:translate-y-2 transition"
     >
       {{ label }}
     </Label>

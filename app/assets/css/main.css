@@ -8,7 +8,11 @@
   --ui-text-inverted: white;
   --ui-text-muted: oklch(0.5138 0 0);
 
-  --ui-header-height: 112px;
+  @media (width > 64rem) {
+    --ui-header-height: 112px;
+  }
+
+  --ui-header-height: 80px;
 
   /**
    * 1820 + 50 с каждого края

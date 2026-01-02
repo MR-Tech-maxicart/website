@@ -17,7 +17,7 @@ defineProps<{
       <div class="text-[27px] tracking-[-.07em] leading-[.74]">
         {{ item.title }}
       </div>
-      <p class="text-lg tracking-[-.07em] leading-[1.3] text-[#676767] text-balance">
+      <p class="text-[18px] tracking-[-.07em] leading-[1.3] text-[#676767] text-balance">
         {{ item.description }}
       </p>
     </div>

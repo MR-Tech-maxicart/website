@@ -1,6 +1,8 @@
-import { LazySlideoverContactForm } from "#components";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore Nuxt exposes lazy components via `#components` per Nuxt UI docs.
+import { LazySlideoverContactForm } from '#components'
 import { useNuxtApp } from '#app'
-import { useOverlay} from "#ui/composables";
+import { useOverlay } from '#ui/composables'
 
 export type OverlayManager = {
   contact: ReturnType<ReturnType<typeof useOverlay>['create']>

@@ -2,10 +2,12 @@
 import * as v from 'valibot'
 import type { FormSubmitEvent, FormErrorEvent } from '@nuxt/ui'
 
-defineProps<{
+withDefaults(defineProps<{
   id?: string
   showSubmitButton?: boolean
-}>()
+}>(), {
+  showSubmitButton: true
+})
 
 const emit = defineEmits<{
   formProcessed: []
@@ -59,7 +61,7 @@ async function onError(event: FormErrorEvent) {
     :schema="schema"
     :state="state"
     :validate-on="['blur', 'change']"
-    class="flex flex-col gap-y-[30px] max-w-[516px]"
+    class="flex flex-col gap-y-2.5 lg:gap-y-[30px] md:max-w-[390px] xl:max-w-[516px]"
     :disabled="disabled"
     @submit="onSubmit"
     @error="onError"
@@ -106,14 +108,14 @@ async function onError(event: FormErrorEvent) {
 
     <UFormField
       name="consent"
-      class="-mt-2"
+      class="max-lg:mt-1.5 lg:-mt-2"
     >
       <UCheckbox
         v-model="state.consent"
         :label="$t('forms.consent')"
         :ui="{
           base: `data-[state=checked]:ring-primary ring-2 ring-[#606060]`,
-          label: 'text-[16px] leading-[1.3] text-[#606060]',
+          label: 'text-base leading-[1.3] text-[#606060]',
           indicator: 'bg-transparent text-primary',
           icon: 'size-[85%]'
         }"
@@ -121,11 +123,12 @@ async function onError(event: FormErrorEvent) {
     </UFormField>
 
     <UButton
-      v-if="showSubmitButton !== false"
+      v-if="showSubmitButton"
       type="submit"
       :label="$t('forms.submit')"
+      class="mt-3 sm:max-lg:mt-5"
       :ui="{
-        base: 'justify-center font-semibold text-[27px] leading-[1.2] py-3'
+        base: 'justify-center font-semibold text-base sm:text-[18px] lg:text-[27px] leading-[1.2] py-4 lg:py-3'
       }"
       :loading="disabled"
       loading-icon="i-lucide-loader"

@@ -20,7 +20,7 @@ defineSlots<{
   <UPageSection
     :ui="{
       container: cn('lg:py-32 sm:gap-24', containerClass),
-      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-tighter leading-none text-muted text-left',
+      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-[-0.05em] leading-none text-muted text-left',
       body: 'mt-[80px] flex'
     }"
     :title="title"
@@ -53,7 +53,7 @@ defineSlots<{
 
       <p
         v-if="sectionSubDescription?.length"
-        class="w-[20%] text-muted text-lg tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
+        class="w-[20%] text-muted text-[18px] tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
       >
         {{ sectionSubDescription }}
       </p>

@@ -30,7 +30,7 @@ const localePath = useLocalePath()
       :keypath="titleKey"
       scope="global"
       tag="div"
-      class="max-w-[315px] text-[35px] tracking-tighter leading-[1.1715] relative z-10 ml-10 mt-10"
+      class="max-w-[315px] text-[35px] tracking-[-0.05em] leading-[1.1715] relative z-10 ml-10 mt-10"
     >
       <br>
     </I18nT>
