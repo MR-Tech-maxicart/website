@@ -7,14 +7,15 @@ const menuItems = getMainMenuItems(t, localePath)
 
 <template>
   <nav>
-    <ul class="grid grid-cols-3 gap-rows-3 grid-flow-row gap-y-[13px] gap-x-20">
+    <ul class="grid grid-cols-[max-content_max-content] md:grid-cols-[max-content_max-content_max-content] gap-rows-3 grid-flow-row gap-y-[15px] md:gap-y-2 lg:gap-y-[13px] gap-x-[15px] md:gap-x-10 lg:gap-x-20">
       <li
         v-for="(menuItem, idx) in menuItems"
         :key="idx"
+        class="max-md:max-w-min min-w-[70px]"
       >
         <NuxtLink
           :to="menuItem.to"
-          class="font-medium text-lg"
+          class="font-medium text-sm md:text-[18px]"
         >
           {{ menuItem.label }}
         </NuxtLink>

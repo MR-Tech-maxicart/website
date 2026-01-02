@@ -11,7 +11,7 @@ defineProps<{
     :items="menuItems"
     orientation="vertical"
     :ui="{
-      link: 'text-lg font-light text-[#ffffff] capitalize'
+      link: 'text-[18px] font-light text-[#ffffff] capitalize'
     }"
   />
 </template>

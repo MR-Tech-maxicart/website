@@ -82,7 +82,7 @@ function onFocus(event: FocusEvent) {
     :autofocus="autofocus"
     v-bind="{ ...$attrs, ...ariaAttrs }"
     :class="[
-      'peer pb-[13px] pt-[8px] text-lg font-medium appearance-none w-full bg-transparent text-white border-b focus:border-b-primary transition-colors rounded-none focus-visible:outline-none',
+      'peer pb-[13px] pt-[8px] lg:text-[18px] font-medium appearance-none w-full bg-transparent text-white border-b focus:border-b-primary transition-colors rounded-none focus-visible:outline-none',
       props.class
     ]"
     @input="onInput"

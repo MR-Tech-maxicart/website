@@ -9,7 +9,9 @@ const cookieAccepted = useCookie<boolean>('cookie-accepted')
     <NuxtLoadingIndicator />
     <LayoutHeader />
 
-    <UMain class="hidden xl:block">
+    <UMain
+      as="main"
+    >
       <slot />
     </UMain>
 

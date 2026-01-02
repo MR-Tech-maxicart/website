@@ -50,7 +50,7 @@ const isActive = defineModel<boolean>('isActive', {
       </h5>
 
       <p
-        class="text-lg leading-[1.3] transition-colors tracking-[-.07em] font-light"
+        class="text-[18px] leading-[1.3] transition-colors tracking-[-.07em] font-light"
         :class="[isActive ? 'text-[#ffffff]' : 'text-muted']"
       >
         {{ $t(card.descriptionKey) }}

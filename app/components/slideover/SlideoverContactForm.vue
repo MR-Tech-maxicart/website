@@ -26,7 +26,7 @@ const close = () => emit('close')
 
     <template #footer>
       <UButton
-        color="neutral"
+        variant="ghost"
         :label="$t('dismiss')"
         size="lg"
         @click="close"

@@ -53,7 +53,7 @@ defineSlots<{
 
       <p
         v-if="sectionSubDescription?.length"
-        class="w-[20%] text-muted text-lg tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
+        class="w-[20%] text-muted text-[18px] tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
       >
         {{ sectionSubDescription }}
       </p>

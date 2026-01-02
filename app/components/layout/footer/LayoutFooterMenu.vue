@@ -6,7 +6,7 @@ const menuItems = getFooterMenuItems(t, localePath)
 
 <template>
   <nav>
-    <ul class="flex gap-x-2 -ml-0.5 items-center">
+    <ul class="flex flex-wrap gap-x-2 -ml-0.5 items-center overflow-hidden">
       <li
         v-for="(menuItem, idx) in menuItems"
         :key="idx"
@@ -16,7 +16,7 @@ const menuItems = getFooterMenuItems(t, localePath)
       >
         <NuxtLink
           :to="menuItem.to"
-          class="text-[#4A4A4A] p-1 block hover:text-primary transition-colors"
+          class="text-[#4A4A4A] p-1 block hover:text-primary transition-colors max-lg:text-sm"
         >
           {{ menuItem.label }}
         </NuxtLink>

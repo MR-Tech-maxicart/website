@@ -22,11 +22,11 @@ const menuItems = getMainMenuItems(t, localePath)
 <template>
   <div
     ref="sentinel"
-    class="mt-6"
+    class="sm:mt-6 lg:mt-8"
   />
   <UHeader
     :ui="{
-      root: 'border-none py-7 sticky top-0' + (isSticky ? '' : ' backdrop-blur-none bg-[none]'),
+      root: 'border-none py-4 lg:py-7 sticky top-0' + (isSticky ? '' : ' backdrop-blur-none bg-[none]'),
       toggle: 'fill-primary [&>svg]:!size-8'
       // center: 'lg:hidden'
     }"
@@ -36,7 +36,7 @@ const menuItems = getMainMenuItems(t, localePath)
     }"
   >
     <template #left>
-      <AppLogo />
+      <AppLogo class="max-lg:w-[120px]" />
     </template>
 
     <LayoutHeaderMenu :menu-items="menuItems" />

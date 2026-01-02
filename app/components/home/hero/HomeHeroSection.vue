@@ -5,8 +5,8 @@
 <template>
   <UPageSection
     :ui="{
-      root: 'bottom-[calc(var(--ui-header-height)+var(--spacing)*6)] pt-[calc(var(--ui-header-height)+var(--spacing)*6)] min-h-[calc(100vh-var(--ui-header-height))]',
-      container: 'py-0 lg:py-0 xl:py-24 sm:gap-24 relative z-10'
+      root: 'sm:bottom-[calc(var(--ui-header-height)+var(--spacing)*6)] sm:pt-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:bottom-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:pt-[calc(var(--ui-header-height)+var(--spacing)*8)] min-h-[calc(100vh-var(--ui-header-height))]',
+      container: 'py-0 md:py-20 lg:py-24 sm:gap-24 relative z-10'
     }"
   >
     <template #top>
@@ -16,7 +16,7 @@
       />
     </template>
 
-    <div class="flex gap-4 justify-between">
+    <div class="flex max-xl:flex-col gap-y-10 xl:gap-x-4 xl:justify-between">
       <div class="border-l-3 pl-3 text-base max-w-[120px] h-max font-medium">
         {{ $t('home.hero.innovate_automate') }}
       </div>
@@ -25,7 +25,7 @@
     </div>
 
     <div class="flex items-center justify-between gap-4">
-      <HomeHeroSocials />
+      <LayoutSocials class="gap-x-[11px]" />
 
       <div class="flex gap-x-6 gap-y-28 w-5/6">
         <HomeHeroCTAButtons class="flex-1" />

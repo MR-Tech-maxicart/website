@@ -8,14 +8,15 @@
 
     <HomeAboutSection
       container-class="pt-0 sm:pt-0 lg:pt-0"
+      class="hidden lg:block"
     />
 
-    <HomeCapabilitiesSection />
+    <HomeCapabilitiesSection class="hidden lg:block" />
 
-    <HomeScaleSection />
+    <HomeScaleSection class="hidden lg:block" />
 
-    <HomeSolutionsSection />
+    <HomeSolutionsSection class="hidden lg:block" />
 
-    <HomeSaasSection />
+    <HomeSaasSection class="hidden lg:block" />
   </div>
 </template>

@@ -20,7 +20,7 @@ watch(
       {{ $t('home.scale.cta.getAdvice') }}
     </UButton>
 
-    <p class="text-[#888891] text-center font-medium text-lg leading-[1.3]">
+    <p class="text-[#888891] text-center font-medium text-[18px] leading-[1.3]">
       {{ $t('home.scale.cta.description') }}
     </p>
   </div>
