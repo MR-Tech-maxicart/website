@@ -5,7 +5,7 @@
 <template>
   <UPageSection
     :ui="{
-      root: 'sm:bottom-[calc(var(--ui-header-height)+var(--spacing)*6)] sm:pt-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:bottom-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:pt-[calc(var(--ui-header-height)+var(--spacing)*8)] min-h-[calc(100vh-var(--ui-header-height))]',
+      root: 'bottom-[calc(var(--ui-header-height)+var(--spacing)*6)] pt-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:bottom-[calc(var(--ui-header-height)+var(--spacing)*8)] lg:pt-[calc(var(--ui-header-height)+var(--spacing)*8)] min-h-[calc(100vh-var(--ui-header-height))]',
       container: 'py-0 py-16 md:py-20 lg:py-24 sm:gap-24 relative z-10'
     }"
   >

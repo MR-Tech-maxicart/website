@@ -5,7 +5,7 @@
 <template>
   <UFooter
     :ui="{
-      top: 'py-11 lg:py-[68px] px-4',
+      top: 'py-11 lg:py-[68px] px-4 sm:px-16 lg:px-4',
       left: 'hidden',
       right: 'hidden',
       center: 'container mx-auto justify-between w-full items-start py-12 border-t gap-x-4',

@@ -19,9 +19,9 @@ defineSlots<{
 <template>
   <UPageSection
     :ui="{
-      container: cn('lg:py-32 sm:gap-24', containerClass),
-      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-semibold lg:font-normal tracking-[-0.05em] leading-none text-muted text-left',
-      body: 'mt-[80px] flex'
+      container: cn('sm:py-16 lg:py-32 sm:gap-[50px] lg:gap-24', containerClass),
+      title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-medium md:font-normal tracking-[-0.05em] leading-none text-muted text-left',
+      body: 'mt-[57px] lg:mt-[80px] flex'
     }"
     :title="title"
   >
@@ -34,29 +34,29 @@ defineSlots<{
       />
       <HomeSectionIdxAndKey
         v-else
-        class="w-1/6"
+        class="w-1/6 shrink-0"
         :index="sectionNumber"
         :section-key="sectionKey"
       />
 
-      <I18nT
-        :keypath="sectionDescriptionKey"
-        scope="global"
-        tag="div"
-        class="text-[#f8f8f8] text-[48px] leading-[1.2] font-medium tracking-[-.08em] text-balance"
-        :class="[
-          sectionSubDescription?.length ? 'max-w-[calc(100%-36.6667%)]' : 'max-w-[70%]'
-        ]"
-      >
-        <br>
-      </I18nT>
+      <div class="flex max-xl:flex-wrap">
+        <I18nT
+          :keypath="sectionDescriptionKey"
+          scope="global"
+          tag="div"
+          class="xl:mr-2 text-[20px] sm:text-[35px] lg:text-[48px] leading-[1.2] text-[#f8f8f8] font-medium tracking-[-.08em] text-balance"
+          :class="[
+            sectionSubDescription?.length ? 'xl:max-w-[calc(100%-36.6667%)]' : 'xl:max-w-[70%]'
+          ]"
+        />
 
-      <p
-        v-if="sectionSubDescription?.length"
-        class="w-[20%] text-muted text-[18px] tracking-[-.09em] leading-[1.3] font-light shrink-0 ml-auto"
-      >
-        {{ sectionSubDescription }}
-      </p>
+        <p
+          v-if="sectionSubDescription?.length"
+          class="max-xl:mt-5 xl:w-1/5 xl:ml-auto text-muted text-[16px] lg:text-[18px] tracking-[-.09em] leading-[1.3] font-light"
+        >
+          {{ sectionSubDescription }}
+        </p>
+      </div>
     </template>
 
     <slot />

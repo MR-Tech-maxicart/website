@@ -6,10 +6,7 @@
   <div>
     <HomeHeroSection />
 
-    <HomeAboutSection
-      container-class="pt-0 sm:pt-0 lg:pt-0"
-      class="hidden xl:block"
-    />
+    <HomeAboutSection container-class="pt-0 sm:pt-0 lg:pt-0" />
 
     <HomeCapabilitiesSection class="hidden xl:block" />
 

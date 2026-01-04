@@ -103,7 +103,6 @@ const breakpointImages = computed(() =>
 
 <template>
   <picture :class="pictureClass">
-    <!-- Breakpoints: (min-width) from largest to smallest -->
     <template
       v-for="(it, idx) in breakpointImages"
       :key="`${it.src}-${it.minWidth}-${idx}`"

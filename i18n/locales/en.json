@@ -42,7 +42,7 @@
     "about": {
       "title": "About Genloft",
       "sectionKey": "about",
-      "sectionDescription": "GENLOFT is an infrastructure - first SaaS{0}platform for building, securing, and operating{0}trading platforms, digital asset products, and{0}ambitious online services.",
+      "sectionDescription": "GENLOFT is an infrastructure - first SaaS platform for building, securing, and operating trading platforms, digital asset products, and ambitious online services.",
       "sectionSubDescription": "We combine AI-driven generation with modular backend tools, zero-trust access, and compliance-ready workflows – so product teams in finance and digital assets can move fast without losing control.",
       "cards": {
         "zeroTrust": {

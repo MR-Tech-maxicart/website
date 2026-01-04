@@ -29,12 +29,12 @@ export default defineAppConfig({
     },
     header: {
       slots: {
-        container: 'w-full max-w-[1920px] lg:px-[50px]'
+        container: 'w-full max-w-[1920px] sm:px-16 lg:px-[50px]'
       }
     },
     pageSection: {
       slots: {
-        container: 'lg:px-[20px]'
+        container: 'lg:px-[20px] sm:px-16'
       }
     },
     slideover: {
