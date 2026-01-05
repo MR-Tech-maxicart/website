@@ -56,9 +56,11 @@ const localePath = useLocalePath()
         alt: $t(titleKey),
         class: [
           'absolute bottom-0 right-0',
-          ['zeroTrust', 'gdpr'].includes(itemKey)
+          ['gdpr'].includes(itemKey)
             ? 'w-full max-h-full lg:w-auto'
-            : (itemKey === 'cloud' ? 'h-full lg:h-[90%]' : 'h-[85%]')
+            : itemKey === 'zeroTrust'
+              ? 'w-full max-h-full'
+              : (itemKey === 'cloud' ? 'h-full lg:h-[90%]' : 'h-[85%]')
         ].join(' ')
       }"
     />
