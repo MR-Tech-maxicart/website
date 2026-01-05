@@ -1,6 +1,6 @@
 <!-- components/ResponsivePicture.vue -->
 <script setup lang="ts">
-import { type ImgHTMLAttributes } from 'vue'
+import type { ImgHTMLAttributes } from 'vue'
 
 type BreakpointImage = {
   /**
