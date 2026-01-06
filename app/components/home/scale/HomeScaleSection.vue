@@ -12,7 +12,7 @@ const { data: scales } = await useAsyncData('scaleItems', () => queryCollection(
     <template #sectionIdAndKey="{ sectionKey, sectionNumber }">
       <HomeSectionIdxAndKey
         :index="sectionNumber"
-        class="w-1/6"
+        class="w-1/4 sm:w-1/6 shrink-0"
       >
         <template #sectionKey>
           <I18nT

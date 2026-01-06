@@ -8,7 +8,7 @@
 
     <HomeAboutSection container-class="pt-0 sm:pt-0 lg:pt-0" />
 
-    <HomeCapabilitiesSection class="hidden xl:block" />
+    <HomeCapabilitiesSection />
 
     <HomeScaleSection class="hidden xl:block" />
 

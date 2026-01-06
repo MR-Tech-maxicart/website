@@ -13,7 +13,7 @@ const formatIndexString = (index: number) => String(index + 1).padStart(3, '0')
     :section-key="$t('home.saas.sectionKey')"
     section-description-key="home.saas.sectionDescription"
     :section-sub-description="$t('home.saas.sectionSubDescription')"
-    container-class="sm:gap-0 gap-0"
+    container-class="gap-0 sm:gap-0 lg:gap-0"
   >
     <ul class="grid grid-cols-18 gap-1 mt-24">
       <HomeSaasItem

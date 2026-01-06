@@ -19,7 +19,7 @@ defineSlots<{
 <template>
   <UPageSection
     :ui="{
-      container: cn('sm:py-16 lg:py-32 sm:gap-[50px] lg:gap-24', containerClass),
+      container: cn('py-[50px] sm:py-16 lg:py-32 sm:gap-[50px] lg:gap-24', containerClass),
       title: 'text-[50px] sm:text-[61px] lg:text-[107px] font-medium md:font-normal tracking-[-0.05em] leading-none text-muted text-left',
       body: 'mt-[57px] lg:mt-[80px] flex'
     }"
@@ -34,7 +34,7 @@ defineSlots<{
       />
       <HomeSectionIdxAndKey
         v-else
-        class="w-1/6 shrink-0"
+        class="w-1/4 sm:w-1/6 shrink-0"
         :index="sectionNumber"
         :section-key="sectionKey"
       />

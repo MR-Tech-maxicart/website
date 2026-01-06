@@ -62,7 +62,7 @@
     "capabilities": {
       "title": "Our Capabilities",
       "sectionKey": "service",
-      "sectionDescription": "Activate only what you need - each{0}capability is modular and integrates with{0}the core platform.",
+      "sectionDescription": "Activate only what you need - each capability is modular and integrates with the core platform.",
       "badges": {
         "service": "service"
       },
