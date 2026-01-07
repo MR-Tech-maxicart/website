@@ -12,11 +12,25 @@ const formatIndexString = (index: number) => String(index + 1).padStart(2, '0')
     section-description-key="home.solutions.sectionDescription"
     :section-sub-description="$t('home.solutions.sectionSubDescription')"
   >
-    <div class="grid grid-cols-3 grid-rows-5 gap-1">
-      <NuxtImg
-        class="row-span-5 w-full h-full object-fill"
-        src="home/solutions.png"
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-1">
+      <AppPicture
+        class="xl:row-span-5"
+        :images="[
+          { src: 'home/solutions-mobile.png' },
+          { src: 'home/solutions-tablet.png', minWidth: 640 },
+          { src: 'home/solutions.png', minWidth: 1280 }
+        ]"
+        :img-attrs="{
+          alt: $t('home.solutions.title'),
+          class: 'w-full h-full object-fill',
+          loading: 'lazy',
+          decoding: 'async'
+        }"
       />
+
+      <div class="xl:col-span-2 bg-primary rounded-[10px] text-pretty max-xl:font-medium text-[14px] xl:text-[24px] leading-[1.5] flex max-xl:uppercase xl:items-center py-[16px] xl:py-6 px-[11px] xl:px-[14px] max-sm:order-12 xl:order-12">
+        {{ $t('home.solutions.highlightText') }}
+      </div>
 
       <HomeSolutionsListItem
         v-for="(solution, idx) in solutions"
@@ -24,10 +38,6 @@ const formatIndexString = (index: number) => String(index + 1).padStart(2, '0')
         :item="solution"
         :index="formatIndexString(idx)"
       />
-
-      <div class="col-span-2 bg-primary rounded-[10px] text-pretty text-2xl leading-[1.5] flex items-center px-[14px]">
-        {{ $t('home.solutions.highlightText') }}
-      </div>
     </div>
   </HomeSection>
 </template>

@@ -20,7 +20,7 @@ const isActive = defineModel<boolean>('isActive', {
 
 <template>
   <article
-    class="group/card relative overflow-hidden rounded-[10px] transition-colors cursor-default max-xl:break-inside-avoid select-none flex h-full flex-col gap-y-5 xl:gap-y-7 px-[13px] xl:px-[17px] py-8 xl:py-7 xl:justify-around"
+    class="group/card relative rounded-[10px] transition-colors cursor-default select-none flex h-full flex-col gap-y-5 xl:gap-y-7 px-[13px] xl:px-[17px] py-8 xl:py-7 xl:justify-around"
     :class="[
       isActive
         ? 'bg-primary text-[#ffffff]'
