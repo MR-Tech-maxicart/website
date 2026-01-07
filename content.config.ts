@@ -19,6 +19,7 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string().optional(),
         icon: z.string(),
+        iconMobile: z.string(),
         highlight: z.string()
       })
     }),

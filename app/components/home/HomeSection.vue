@@ -26,15 +26,8 @@ defineSlots<{
     :title="title"
   >
     <template #body>
-      <slot
-        v-if="$slots.sectionIdAndKey"
-        name="sectionIdAndKey"
-        :section-number="sectionNumber"
-        :section-key="sectionKey"
-      />
       <HomeSectionIdxAndKey
-        v-else
-        class="w-1/4 sm:w-1/6 shrink-0"
+        class="w-1/4 sm:w-1/6"
         :index="sectionNumber"
         :section-key="sectionKey"
       />

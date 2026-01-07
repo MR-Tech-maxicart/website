@@ -10,9 +10,9 @@
 
     <HomeCapabilitiesSection />
 
-    <HomeScaleSection class="hidden xl:block" />
+    <HomeScaleSection />
 
-    <HomeSolutionsSection class="hidden xl:block" />
+    <HomeSolutionsSection />
 
     <HomeSaasSection class="hidden xl:block" />
   </div>

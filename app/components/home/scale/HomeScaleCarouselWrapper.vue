@@ -14,21 +14,22 @@ const handleNext = () => carousel.value?.slideNext()
 </script>
 
 <template>
-  <div class="grid grid-cols-6 gap-x-1">
+  <div class="block md:grid md:grid-cols-5 xl:grid-cols-6 md:gap-x-1">
     <HomeScaleCarousel
       ref="scaleCarousel"
-      class="col-span-5"
+      class="md:col-span-4 xl:col-span-5"
       :items="items"
     />
 
-    <div class="grid grid-rows-3 gap-y-1">
+    <div class="md:grid md:grid-rows-3 md:gap-y-1 max-md:mt-1">
       <HomeScaleCarouselControls
+        class="hidden md:flex"
         @prev="handlePrev"
         @next="handleNext"
       />
 
       <HomeScaleGetAdviceCTA
-        class="row-span-2"
+        class="md:row-span-2"
       />
     </div>
   </div>

@@ -28,15 +28,17 @@ defineExpose<HomeScaleCarouselExposed>({
     loop
     :items="items"
     :ui="{
-      viewport: 'h-full',
-      container: 'h-full',
-      item: 'h-full grid grid-cols-5 grid-rows-3 gap-1'
+      viewport: 'md:h-full',
+      container: 'max-md:items-stretch md:h-full',
+      item: 'flex flex-col md:h-full md:grid md:grid-cols-5 md:grid-rows-3 md:gap-1'
     }"
   >
     <HomeScaleCarouselItem
       :item="item"
       :total-items="items.length"
       :index="items.indexOf(item)"
+      @prev-btn-click="slidePrev"
+      @next-btn-clock="slideNext"
     />
   </UCarousel>
 </template>
