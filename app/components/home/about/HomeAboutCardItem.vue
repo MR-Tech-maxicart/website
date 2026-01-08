@@ -26,7 +26,7 @@ const localePath = useLocalePath()
 <template>
   <NuxtLinkLocale
     :to="localePath(link ?? { name: 'index' })"
-    :class="cn('relative bg-[#141414] rounded-md cursor-pointer select-none group/card', $props.class)"
+    :class="cn('relative bg-[#141414] rounded-[10px] cursor-pointer select-none group/card', $props.class)"
   >
     <I18nT
       :keypath="titleKey"
@@ -38,7 +38,7 @@ const localePath = useLocalePath()
     </I18nT>
 
     <span
-      class="rounded-md absolute z-10 size-[60px] md:size-[36px] lg:size-[50px] flex items-center justify-center border border-[#AAAAAA]/35 bg-black/35 left-[37px] bottom-[37px] md:bottom-4 md:left-4 lg:bottom-10 lg:left-10 transition shadow-[0_0_48px_0_#0E34B4] group-hover/card:bg-primary"
+      class="rounded-[10px] absolute z-10 size-[60px] md:size-[36px] lg:size-[50px] flex items-center justify-center border border-[#AAAAAA]/35 bg-black/35 left-[37px] bottom-[37px] md:bottom-4 md:left-4 lg:bottom-10 lg:left-10 transition shadow-[0_0_48px_0_#0E34B4] group-hover/card:bg-primary"
     >
       <UIcon
         name="maxicart:arrow-right"

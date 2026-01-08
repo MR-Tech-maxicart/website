@@ -16,7 +16,7 @@ const handleNextClick = (e: PointerEvent) => emit('next', e)
 
 <template>
   <div
-    :class="cn('flex bg-[#141414] rounded-md px-3 md:py-[33px] lg:py-[70px] items-center gap-x-4 md:gap-x-6 lg:gap-x-12 justify-center', $props.class)"
+    :class="cn('flex bg-[#141414] rounded-[10px] px-3 md:py-[33px] lg:py-[70px] items-center gap-x-4 md:gap-x-6 lg:gap-x-12 justify-center', $props.class)"
   >
     <UButton
       variant="ghost"

@@ -34,7 +34,7 @@ const handleNextClick = (e: PointerEvent) => emit('nextBtnClock', e)
 
   <div class="grid grid-cols-2 mt-1 gap-x-1 md:hidden">
     <HomeScaleCarouselItemDots
-      class="py-[39px] bg-[#141414] rounded-md justify-center"
+      class="py-[39px] bg-[#141414] rounded-[10px] justify-center"
       :total-items="totalItems"
       :index="index"
     />
@@ -45,7 +45,7 @@ const handleNextClick = (e: PointerEvent) => emit('nextBtnClock', e)
     />
   </div>
 
-  <div class="md:col-span-3 bg-[#141414] max-md:mt-1 rounded-t-md md:rounded-md px-[30px] max-md:pt-[30px] md:px-[24px] lg:px-[53px] md:pt-7 md:pb-4 lg:py-[63px] flex justify-between items-center gap-x-2">
+  <div class="md:col-span-3 bg-[#141414] max-md:mt-1 rounded-t-md md:rounded-[10px] px-[30px] max-md:pt-[30px] md:px-[24px] lg:px-[53px] md:pt-7 md:pb-4 lg:py-[63px] flex justify-between items-center gap-x-2">
     <div
       v-sane-html="item.title"
       class="text-[25px] md:text-[22px] lg:text-[35px] leading-[1.05] w-max text-balance max-md:mb-1"
@@ -57,7 +57,7 @@ const handleNextClick = (e: PointerEvent) => emit('nextBtnClock', e)
       :index="index"
     />
   </div>
-  <div class="max-md:flex-1 col-span-3 row-span-2 bg-[#141414] rounded-b-md md:rounded-md px-[30px] md:px-[24px] xl:px-[53px] pb-[18px] md:py-5 xl:py-12 flex flex-col justify-between">
+  <div class="max-md:gap-y-2 max-md:flex-1 col-span-3 row-span-2 bg-[#141414] rounded-b-md md:rounded-[10px] px-[30px] md:px-[24px] xl:px-[53px] pb-[18px] md:py-5 xl:py-12 flex flex-col justify-between">
     <p
       v-sane-html="item.description"
       class="md:text-[16px] xl:text-[24px] leading-[1.3] text-[#888891] text-balance xl:max-w-[480px]"

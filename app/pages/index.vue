@@ -14,6 +14,6 @@
 
     <HomeSolutionsSection />
 
-    <HomeSaasSection class="hidden xl:block" />
+    <HomeSaasSection />
   </div>
 </template>

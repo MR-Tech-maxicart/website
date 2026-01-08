@@ -39,7 +39,7 @@ defineSlots<{
           tag="div"
           class="xl:mr-2 text-[20px] sm:text-[35px] lg:text-[48px] leading-[1.2] text-[#f8f8f8] font-medium tracking-[-.08em] text-balance"
           :class="[
-            sectionSubDescription?.length ? 'xl:max-w-[calc(100%-36.6667%)]' : 'xl:max-w-[70%]'
+            'xl:max-w-[70%]'
           ]"
         />
 

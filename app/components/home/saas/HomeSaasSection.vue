@@ -15,7 +15,7 @@ const formatIndexString = (index: number) => String(index + 1).padStart(3, '0')
     :section-sub-description="$t('home.saas.sectionSubDescription')"
     container-class="gap-0 sm:gap-0 lg:gap-0"
   >
-    <ul class="grid grid-cols-18 gap-1 mt-24">
+    <ul class="grid grid-cols-2 md:grid-cols-20 xl:grid-cols-18 gap-1 mt-24">
       <HomeSaasItem
         v-for="(item, idx) in saasSolutions"
         :key="item.key"
@@ -23,16 +23,17 @@ const formatIndexString = (index: number) => String(index + 1).padStart(3, '0')
         :order="formatIndexString(idx)"
         :class="[
           idx === 3
-            ? 'col-span-6'
+            ? 'xl:col-span-6'
             : (idx === 7 || idx === 8)
-              ? 'col-span-3'
-              : 'col-span-4'
+              ? 'xl:col-span-3'
+              : 'xl:col-span-4',
+          idx < 4 ? 'md:col-span-5' : 'md:col-span-4'
         ]"
       />
+
+      <HomeSaasHighlightText class="flex items-center md:hidden text-[20px] px-2" />
     </ul>
 
-    <div class="bg-primary rounded-[10px] uppercase leading-[1.2] text-[37px] mt-1 py-[53px] text-center">
-      {{ $t('home.saas.highlightText') }}
-    </div>
+    <HomeSaasHighlightText class="hidden md:block" />
   </HomeSection>
 </template>
