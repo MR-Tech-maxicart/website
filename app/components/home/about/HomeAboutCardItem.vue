@@ -26,7 +26,7 @@ const localePath = useLocalePath()
 <template>
   <NuxtLinkLocale
     :to="localePath(link ?? { name: 'index' })"
-    :class="cn('relative bg-[#141414] rounded-[10px] cursor-pointer select-none group/card', $props.class)"
+    :class="cn('relative bg-[#141414] rounded-[10px] cursor-pointer select-none group/card overflow-hidden', $props.class)"
   >
     <I18nT
       :keypath="titleKey"
@@ -57,10 +57,10 @@ const localePath = useLocalePath()
         class: [
           'absolute bottom-0 right-0',
           ['gdpr'].includes(itemKey)
-            ? 'w-full max-h-full lg:w-auto'
+            ? 'max-md:h-full md:w-full md:max-h-full lg:w-auto'
             : itemKey === 'zeroTrust'
-              ? 'w-full max-h-full'
-              : (itemKey === 'cloud' ? 'h-full lg:h-[90%]' : 'h-[85%]')
+              ? 'max-md:-bottom-4 max-md:h-full md:w-full md:max-h-full'
+              : (itemKey === 'cloud' ? 'h-full lg:h-[90%]' : 'h-full md:h-[85%]')
         ].join(' ')
       }"
     />

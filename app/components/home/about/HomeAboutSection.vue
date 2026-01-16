@@ -49,7 +49,7 @@ const items: Record<HomeCardAboutItemKey, HomeAboutCardItemProps> = {
         :key="key"
         :item-key="key"
         v-bind="item"
-        class="block md:flex-1 h-[358px] md:h-[222px] lg:h-[500px]"
+        class="block md:flex-1 h-[250px] md:h-[222px] lg:h-[500px]"
       />
     </div>
   </HomeSection>
