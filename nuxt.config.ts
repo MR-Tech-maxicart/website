@@ -11,8 +11,13 @@ export default defineNuxtConfig({
     '@nuxtjs/seo'
   ],
 
+  sourcemap: {
+    server: process.env.ENV !== 'production',
+    client: process.env.ENV !== 'production',
+  },
+
   devtools: {
-    enabled: false
+    enabled: process.env.ENV !== 'production'
   },
 
   app: {
