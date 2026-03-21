@@ -8,13 +8,13 @@ export default defineAppConfig({
       },
       {
         titleKey: 'instagram',
-        link: 'https://t.me/max_greekk',
+        link: 'https://www.instagram.com/genloft.io',
         icon: 'maxicart:instagram'
       },
       {
-        titleKey: 'facebook',
-        link: 'https://www.facebook.com',
-        icon: 'maxicart:facebook'
+        titleKey: 'x',
+        link: 'https://x.com/genloft_io',
+        icon: 'maxicart:xtwitter'
       }
     ]
   },

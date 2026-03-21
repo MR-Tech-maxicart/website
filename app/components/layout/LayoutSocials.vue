@@ -26,7 +26,7 @@ const appSocials = useAppConfig().app.socials
       <UIcon
         :class="cn(
           'size-[15px]',
-          social.titleKey === 'instagram' ? '[&_path]:fill-primary' : 'group-hover/btn:[&_path]:fill-white',
+          social.titleKey !== 'telegram' ? '[&_path]:fill-primary' : 'group-hover/btn:[&_path]:fill-white',
           iconClass
         )"
         :name="social.icon"
